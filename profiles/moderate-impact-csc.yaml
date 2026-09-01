@@ -1,0 +1,62 @@
+profile:
+  uuid: b0a5f51a-219e-5d8c-8bd7-79c3ed41eb89
+  metadata:
+    title: Cybersecurity Standards for Cloud Systems — Moderate Impact, Cloud Service Customer
+    published: '2024-09-10T00:00:00+07:00'
+    last-modified: '2025-09-01T00:00:00+07:00'
+    version: '1.1'
+    oscal-version: 1.2.3
+    props:
+    - name: profile-axis
+      value: impact-level x party
+    - name: impact-level
+      value: moderate
+    - name: party
+      value: csc
+    - name: party-title
+      value: Cloud Service Customer
+    - name: source-clause
+      value: '4'
+    - name: certification
+      value: Certified by the regulators (Attestation) or certified by a certify body on a 3-year cycle.
+        This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd
+        years.
+    links:
+    - href: https://cloudsecurity.ncsa.or.th/publicationdocuments.html
+      rel: canonical
+    remarks: 'Moderate Impact baseline for a Cloud Service Customer (CSC), from the minimum-requirements
+      matrix in clause 4 of the annex.
+
+
+      Selects 28 of the catalog''s 39 cloud service customer controls, of which 9 are added at this level
+      (5.1.3, 5.2.7, 5.2.10) over the low-impact profile.
+
+
+      Minimum requirements as the matrix states them: Part One: - All Part Two: - 5.2.1, 5.2.2, 5.2.3,
+      5.2.4, 5.2.7, 5.2.8, 5.2.9, and 5.2.10 *Without 5.2.5
+
+
+      Certification required of the cloud service customer at this level: Certified by the regulators
+      (Attestation) or certified by a certify body on a 3-year cycle. This includes a full certification
+      in the 1st year and a surveillance audit in the 2nd and 3rd years.
+
+
+      This profile is a rendering of a published standard and carries no roles or parties: the National
+      Cyber Security Committee issued the standard, not this file.'
+  imports:
+  - href: ./low-impact-csc.yaml
+    include-all: {}
+  - href: ../catalogs/th-cscs.yaml
+    include-controls:
+    - with-ids:
+      - th-cscs-5.1.3.1-csc
+      - th-cscs-5.1.3.2-csc
+      - th-cscs-5.1.3.3-csc
+      - th-cscs-5.1.3.4-csc
+      - th-cscs-5.1.3.5-csc
+      - th-cscs-5.2.7.1-csc
+      - th-cscs-5.2.7.2-csc
+      - th-cscs-5.2.10.1-csc
+      - th-cscs-5.2.10.2-csc
+  merge:
+    as-is: true

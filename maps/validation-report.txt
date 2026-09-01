@@ -1,0 +1,123 @@
+============================================================
+th-ncsa-be2567 — validation report
+============================================================
+  catalog:   pdf-to-catalog-script/xtr/th-cscs.json
+  profiles:  generate-profiles-script/xtr
+  edition:   cscs-v1.1
+  documents: 13 JSON, targeting OSCAL 1.2.3
+
+1. NIST OSCAL 1.2.3 JSON Schema conformance
+-------------------------------------------
+  generate-profiles-script/xtr/profiles/high-impact-csc.json — PASS
+  generate-profiles-script/xtr/profiles/high-impact-csp.json — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csc.json — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csp.json — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csc.json — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csp.json — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csc-resolved-catalog.json — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csp-resolved-catalog.json — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csc-resolved-catalog.json — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csp-resolved-catalog.json — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csc-resolved-catalog.json — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csp-resolved-catalog.json — PASS
+  pdf-to-catalog-script/xtr/th-cscs.json — PASS
+
+2. NIST OSCAL 1.2.3 XSD conformance
+-----------------------------------
+  generate-profiles-script/xtr/profiles/high-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/high-impact-csp.xml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csp.xml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csp.xml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csp-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csp-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csp-resolved-catalog.xml — PASS
+  pdf-to-catalog-script/xtr/th-cscs.xml — PASS
+
+3. YAML / JSON structural equality
+----------------------------------
+  generate-profiles-script/xtr/profiles/high-impact-csc.yaml — PASS
+  generate-profiles-script/xtr/profiles/high-impact-csp.yaml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csc.yaml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csp.yaml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csc.yaml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csp.yaml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csc-resolved-catalog.yaml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csp-resolved-catalog.yaml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csc-resolved-catalog.yaml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csp-resolved-catalog.yaml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csc-resolved-catalog.yaml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csp-resolved-catalog.yaml — PASS
+  pdf-to-catalog-script/xtr/th-cscs.yaml — PASS
+
+4. XML / JSON control-set equality
+----------------------------------
+  generate-profiles-script/xtr/profiles/high-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/high-impact-csp.xml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csp.xml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csc.xml — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csp.xml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/high-impact-csp-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/low-impact-csp-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csc-resolved-catalog.xml — PASS
+  generate-profiles-script/xtr/resolved/moderate-impact-csp-resolved-catalog.xml — PASS
+  pdf-to-catalog-script/xtr/th-cscs.xml — PASS
+
+5. Profile import-chain resolution
+----------------------------------
+  generate-profiles-script/xtr/profiles/high-impact-csc.json (39 controls) — PASS
+  generate-profiles-script/xtr/profiles/high-impact-csp.json (37 controls) — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csc.json (19 controls) — PASS
+  generate-profiles-script/xtr/profiles/low-impact-csp.json (18 controls) — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csc.json (28 controls) — PASS
+  generate-profiles-script/xtr/profiles/moderate-impact-csp.json (27 controls) — PASS
+
+6. Resolved catalog versus profile import chain
+-----------------------------------------------
+  high-impact-csc-resolved-catalog.json (39 controls) — PASS
+  high-impact-csp-resolved-catalog.json (37 controls) — PASS
+  low-impact-csc-resolved-catalog.json (19 controls) — PASS
+  low-impact-csp-resolved-catalog.json (18 controls) — PASS
+  moderate-impact-csc-resolved-catalog.json (28 controls) — PASS
+  moderate-impact-csp-resolved-catalog.json (27 controls) — PASS
+
+7. Catalog structural invariants
+--------------------------------
+  control ids unique — PASS
+  no dangling back-matter links — PASS
+  every control has a title distinct from its id — PASS
+  every control id ends with the party its props declare — PASS
+  every control carries the full prop set — PASS
+  no control has an empty statement — PASS
+  no statement ends at a colon — PASS
+  no page furniture in control content — PASS
+  no group mixes child groups and controls — PASS
+  each of the 41 clauses yields at most two controls — PASS
+
+8. Impact-level axis
+--------------------
+  every section declares a known impact level — PASS
+  csc profiles nest: low-impact-csc (19) ⊆ moderate-impact-csc (28) ⊆ high-impact-csc (39) — PASS
+  csp profiles nest: low-impact-csp (18) ⊆ moderate-impact-csp (27) ⊆ high-impact-csp (37) — PASS
+  the two high-impact profiles together cover every control — PASS
+  no control belongs to both parties — PASS
+
+9. Control statements versus the source PDF
+-------------------------------------------
+  catalog back-matter records the sha256 of this PDF — PASS
+  all 76 statements appear verbatim in the column they are attributed to — PASS
+  the csc controls reproduce the whole csc column, in order (2160 words) — PASS
+  the csp controls reproduce the whole csp column, in order (2208 words) — PASS
+  clauses whose two party columns are identical in the source: ['5.2.6.5']
+  every clause 5 heading in the PDF is accounted for (55 headings) — PASS
+  section impact levels match the clause 4 matrix in the PDF — PASS
+
+============================================================
+85 checks, 0 failure(s) — PASS

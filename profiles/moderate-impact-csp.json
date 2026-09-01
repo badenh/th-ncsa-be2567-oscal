@@ -1,0 +1,72 @@
+{
+  "profile": {
+    "uuid": "0095dda6-2374-5ae4-8a7a-83ae5b99f94a",
+    "metadata": {
+      "title": "Cybersecurity Standards for Cloud Systems — Moderate Impact, Cloud Service Provider",
+      "published": "2024-09-10T00:00:00+07:00",
+      "last-modified": "2025-09-01T00:00:00+07:00",
+      "version": "1.1",
+      "oscal-version": "1.2.3",
+      "props": [
+        {
+          "name": "profile-axis",
+          "value": "impact-level x party"
+        },
+        {
+          "name": "impact-level",
+          "value": "moderate"
+        },
+        {
+          "name": "party",
+          "value": "csp"
+        },
+        {
+          "name": "party-title",
+          "value": "Cloud Service Provider"
+        },
+        {
+          "name": "source-clause",
+          "value": "4"
+        },
+        {
+          "name": "certification",
+          "value": "Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified at least to CSA STAR Level 2/CCM and ISO/IEC 27701."
+        }
+      ],
+      "links": [
+        {
+          "href": "https://cloudsecurity.ncsa.or.th/publicationdocuments.html",
+          "rel": "canonical"
+        }
+      ],
+      "remarks": "Moderate Impact baseline for a Cloud Service Provider (CSP), from the minimum-requirements matrix in clause 4 of the annex.\n\nSelects 27 of the catalog's 37 cloud service provider controls, of which 9 are added at this level (5.1.3, 5.2.7, 5.2.10) over the low-impact profile.\n\nMinimum requirements as the matrix states them: Part One: - All Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.7, 5.2.8, 5.2.9, and 5.2.10 *Without 5.2.5\n\nCertification required of the cloud service provider at this level: Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified at least to CSA STAR Level 2/CCM and ISO/IEC 27701.\n\nThis profile is a rendering of a published standard and carries no roles or parties: the National Cyber Security Committee issued the standard, not this file."
+    },
+    "imports": [
+      {
+        "href": "./low-impact-csp.json",
+        "include-all": {}
+      },
+      {
+        "href": "../catalogs/th-cscs.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "th-cscs-5.1.3.1-csp",
+              "th-cscs-5.1.3.2-csp",
+              "th-cscs-5.1.3.3-csp",
+              "th-cscs-5.1.3.4-csp",
+              "th-cscs-5.1.3.5-csp",
+              "th-cscs-5.2.7.1-csp",
+              "th-cscs-5.2.7.2-csp",
+              "th-cscs-5.2.10.1-csp",
+              "th-cscs-5.2.10.2-csp"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

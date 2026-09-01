@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="98b40c7c-18be-5be5-a077-e820d52685dc">
+   <metadata>
+      <title>Cybersecurity Standards for Cloud Systems — Moderate Impact, Cloud Service Customer (resolved profile catalog)</title>
+      <published>2024-09-10T00:00:00+07:00</published>
+      <last-modified>2025-09-01T00:00:00+07:00</last-modified>
+      <version>1.1</version>
+      <oscal-version>1.2.3</oscal-version>
+      <revisions>
+         <revision>
+            <version>1.0</version>
+            <remarks>
+               <p>Oct 2024: Initial version</p>
+            </remarks>
+         </revision>
+         <revision>
+            <version>1.1</version>
+            <remarks>
+               <p>Sep 2025: Updated contents in section 5. Standards for Cybersecurity of Cloud Systems</p>
+            </remarks>
+         </revision>
+      </revisions>
+      <prop name="source-edition" value="cscs-v1.1" />
+      <prop name="translation-status" value="unofficial" />
+      <prop name="given-date" value="2024-09-10" />
+      <prop name="in-force-date" value="2026-09-10" />
+      <prop name="issuing-instrument" value="Cybersecurity Act B.E. 2562 (2019), Section 9(4)" />
+      <link href="https://cloudsecurity.ncsa.or.th/publicationdocuments.html" rel="canonical" />
+      <role id="issuing-authority">
+         <title>Issuing authority</title>
+         <description>
+            <p>The body that issued the notification.</p>
+         </description>
+      </role>
+      <role id="publisher">
+         <title>Publisher</title>
+         <description>
+            <p>The body that publishes the notification and this English translation.</p>
+         </description>
+      </role>
+      <party uuid="c0e7c559-bbff-51b2-bdfb-e1d4ead8c436" type="organization">
+         <name>National Cyber Security Committee</name>
+         <short-name>NCSC</short-name>
+      </party>
+      <party uuid="6b77b350-05ec-5ed8-b7bf-5711f24ba08e" type="organization">
+         <name>Office of the National Cyber Security Agency</name>
+         <short-name>NCSA</short-name>
+      </party>
+      <responsible-party role-id="issuing-authority">
+         <party-uuid>c0e7c559-bbff-51b2-bdfb-e1d4ead8c436</party-uuid>
+      </responsible-party>
+      <responsible-party role-id="publisher">
+         <party-uuid>6b77b350-05ec-5ed8-b7bf-5711f24ba08e</party-uuid>
+      </responsible-party>
+      <remarks>
+         <p>Resolved profile catalog: the CSCS catalog reduced to the 28 controls the <code>moderate-impact-csc</code> profile chain selects. Section groups left with no controls are removed; the front-matter groups and the back-matter are kept whole.</p>
+         <p>Generated from the NCSA's published PDF by <code>pdf_to_catalog.py</code>. The framework content is the National Cyber Security Committee's; the OSCAL rendering is not theirs and they have not reviewed it, which is why the parties above describe the source document and no party is named as an author of this catalog.</p>
+         <p>The source is an unofficial English translation. Clause 5 was retranslated between version 1.0 and version 1.1 — same 41 clauses and the same clause 4 matrix, substantially different English — so <code>metadata.version</code> is the *translation* version, not a version of the standard.</p>
+         <p>Each clause of the standard is two controls, one per party column, suffixed <code>-csc</code> and <code>-csp</code>. Six clauses address one party only and mint one control. Sections carry <code>props[name=minimum-impact-level]</code>, the weakest impact level at which the clause 4 matrix requires them.</p>
+      </remarks>
+   </metadata>
+   <group id="th-cscs-notification" class="front-matter">
+      <title>The Notification</title>
+      <prop name="sort-id" value="00" />
+      <part id="th-cscs-notification.clause-1" name="provision">
+         <title>Clause 1</title>
+         <prop name="label" value="Clause 1" />
+         <p>This notification shall be called the Notification of the National Cyber Security Committee Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024)."</p>
+      </part>
+      <part id="th-cscs-notification.clause-2" name="provision">
+         <title>Clause 2</title>
+         <prop name="label" value="Clause 2" />
+         <p>This notification shall come into force two years after its publication in the Royal Thai Government Gazette.</p>
+      </part>
+      <part id="th-cscs-notification.clause-3" name="provision">
+         <title>Clause 3</title>
+         <prop name="label" value="Clause 3" />
+         <p>In this notification: "Agency" refers to government agencies, regulators, and organizations of critical information infrastructure as defined by the Cybersecurity Act, B.E. 2562 (2019). "Cloud Computing" refers to the concept of accessing information networks consisting of shareable, elastic, and scalable physical or virtual resources through self-service provisioning and on-demand administration. "Cloud Service" refers to the capability to perform cloud computing, which is accessible via a designated interface. "Cloud Service Category" refers to a group of cloud services with certain shared characteristics, categorized as follows: (1) Infrastructure as a Service (IaaS): Comprising computing systems, data storage, networks, and other relevant resources, where users can efficiently use software on provided infrastructure without managing the underlying infrastructure. (2) Platform as a Service (PaaS): Comprising application platforms, databases, and computer services, where users can develop, deploy, and configure software without managing the underlying infrastructure. (3) Software as a Service (SaaS): Where providers offer ready-to-use software, and users manage configurations, parameters, processing units, and storage to achieve their service objectives. (4) Any combination of services from (1) to (3). (5) Other services as notified by the Office. "Public Cloud" refers to cloud services accessible by any cloud service user, with resources controlled by the cloud service provider. "Cloud Service Customer" (CSC) refers to an agency with a formal contract to use cloud services provided by a cloud service provider. "Cloud Service Provider" (CSP) refers to a public or private entity that makes cloud services available to customers, managing resources to ensure availability, security, and scalability for its users. "Personal Data" refers to personal data as defined in Section 6 of the Personal Data Protection Act, B.E. 2562 (2019). "Office" refers to the Office of the National Cyber Security Agency.</p>
+      </part>
+      <part id="th-cscs-notification.clause-4" name="provision">
+         <title>Clause 4</title>
+         <prop name="label" value="Clause 4" />
+         <p>Agencies using public cloud services must comply with this standard, taking into account the impact level of data or information systems as specified in the Notification of the National Cyber Security Committee Re: Standards for Cybersecurity Categorization of Data or Information Systems, B.E. 2566 (2023), and must meet at least the minimum requirements set out at the end of this notification.</p>
+      </part>
+      <part id="th-cscs-notification.clause-5" name="provision">
+         <title>Clause 5</title>
+         <prop name="label" value="Clause 5" />
+         <p>For personal data, the impact level for confidentiality must be classified at least as medium, as specified in the Notification of the National Cyber Security Committee Re: Standards for Cybersecurity Categorization of Data or Information Systems, B.E. 2566 (2023), and must meet at least the minimum requirements set out at the end of this notification.</p>
+      </part>
+      <part id="th-cscs-notification.clause-6" name="provision">
+         <title>Clause 6</title>
+         <prop name="label" value="Clause 6" />
+         <p>Agencies must submit a summary report of the actions taken to the Office within 30 days of completion.</p>
+      </part>
+      <part id="th-cscs-notification.clause-7" name="provision">
+         <title>Clause 7</title>
+         <prop name="label" value="Clause 7" />
+         <p>The Secretary-General of the National Cyber Security Committee is responsible for enforcing this notification and is authorized to issue notifications, orders, criteria, and procedures to comply with this notification. In case of any issues related to compliance with this notification or matters not specified herein, the Chairman of the National Cyber Security Committee shall have the authority to interpret and adjudicate, and such interpretation and decision shall be final. Given on 10 September B.E. 2567 (2024) Phumtham Wechayachai Deputy Prime Minister as Chairman of the National Cyber Security Committee</p>
+      </part>
+   </group>
+   <group id="th-cscs-definitions" class="front-matter">
+      <title>Definitions</title>
+      <prop name="sort-id" value="01" />
+      <part id="th-cscs-definitions.agency" name="definition">
+         <title>Agency</title>
+         <prop name="term" value="Agency" />
+         <p>"Agency" refers to government agencies, regulators, and organizations of critical information infrastructure as defined by the Cybersecurity Act, B.E. 2562 (2019).</p>
+      </part>
+      <part id="th-cscs-definitions.cloud-computing" name="definition">
+         <title>Cloud Computing</title>
+         <prop name="term" value="Cloud Computing" />
+         <p>"Cloud Computing" refers to the concept of accessing information networks consisting of shareable, elastic, and scalable physical or virtual resources through self-service provisioning and on-demand administration.</p>
+      </part>
+      <part id="th-cscs-definitions.cloud-service" name="definition">
+         <title>Cloud Service</title>
+         <prop name="term" value="Cloud Service" />
+         <p>"Cloud Service" refers to the capability to perform cloud computing, which is accessible via a designated interface.</p>
+      </part>
+      <part id="th-cscs-definitions.cloud-service-category" name="definition">
+         <title>Cloud Service Category</title>
+         <prop name="term" value="Cloud Service Category" />
+         <p>"Cloud Service Category" refers to a group of cloud services with certain shared characteristics, categorized as follows: (1) Infrastructure as a Service (IaaS): Comprising computing systems, data storage, networks, and other relevant resources, where users can efficiently use software on provided infrastructure without managing the underlying infrastructure. (2) Platform as a Service (PaaS): Comprising application platforms, databases, and computer services, where users can develop, deploy, and configure software without managing the underlying infrastructure. (3) Software as a Service (SaaS): Where providers offer ready-to-use software, and users manage configurations, parameters, processing units, and storage to achieve their service objectives. (4) Any combination of services from (1) to (3). (5) Other services as notified by the Office.</p>
+      </part>
+      <part id="th-cscs-definitions.public-cloud" name="definition">
+         <title>Public Cloud</title>
+         <prop name="term" value="Public Cloud" />
+         <p>"Public Cloud" refers to cloud services accessible by any cloud service user, with resources controlled by the cloud service provider.</p>
+      </part>
+      <part id="th-cscs-definitions.cloud-service-customer" name="definition">
+         <title>Cloud Service Customer (CSC)</title>
+         <prop name="term" value="Cloud Service Customer" />
+         <prop name="abbreviation" value="CSC" />
+         <p>"Cloud Service Customer" refers to an agency with a formal contract to use cloud services provided by a cloud service provider.</p>
+      </part>
+      <part id="th-cscs-definitions.cloud-service-provider" name="definition">
+         <title>Cloud Service Provider (CSP)</title>
+         <prop name="term" value="Cloud Service Provider" />
+         <prop name="abbreviation" value="CSP" />
+         <p>"Cloud Service Provider" refers to a public or private entity that makes cloud services available to customers, managing resources to ensure availability, security, and scalability for its users.</p>
+      </part>
+      <part id="th-cscs-definitions.personal-data" name="definition">
+         <title>Personal Data</title>
+         <prop name="term" value="Personal Data" />
+         <p>"Personal Data" refers to personal data as defined in Section 6 of the Personal Data Protection Act, B.E. 2562 (2019).</p>
+      </part>
+      <part id="th-cscs-definitions.office" name="definition">
+         <title>Office</title>
+         <prop name="term" value="Office" />
+         <p>"Office" refers to the Office of the National Cyber Security Agency.</p>
+      </part>
+   </group>
+   <group id="th-cscs-certification" class="front-matter">
+      <title>Minimum Requirements and Certification</title>
+      <prop name="sort-id" value="02" />
+      <prop name="source-clause" value="4" />
+      <part id="th-cscs-certification.low.minimum-requirements" name="minimum-requirements">
+         <title>Low Impact — minimum requirements</title>
+         <prop name="impact-level" value="low" />
+         <p>Part One: - 5.1.1 and 5.1.2 Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.8, and 5.2.9 *Without 5.2.5</p>
+      </part>
+      <part id="th-cscs-certification.low.csc" name="certification">
+         <title>Low Impact — Cloud Service Customer</title>
+         <prop name="impact-level" value="low" />
+         <prop name="party" value="csc" />
+         <p>Self-assessment along with supporting documentation and approval from the highest executive of the organization, the assessment must be retained by the organization and submitted to the office</p>
+      </part>
+      <part id="th-cscs-certification.low.csp" name="certification">
+         <title>Low Impact — Cloud Service Provider</title>
+         <prop name="impact-level" value="low" />
+         <prop name="party" value="csp" />
+         <p>Certified by certify bodies on a 3-year cycle, consisting of certification the 1st year and surveillance audits in the 2nd and 3rd years, certification must also be certified to at least ISO/IEC 27001 and CSA STAR Level 1/CCM Lite.</p>
+      </part>
+      <part id="th-cscs-certification.moderate.minimum-requirements" name="minimum-requirements">
+         <title>Moderate Impact — minimum requirements</title>
+         <prop name="impact-level" value="moderate" />
+         <p>Part One: - All Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.7, 5.2.8, 5.2.9, and 5.2.10 *Without 5.2.5</p>
+      </part>
+      <part id="th-cscs-certification.moderate.csc" name="certification">
+         <title>Moderate Impact — Cloud Service Customer</title>
+         <prop name="impact-level" value="moderate" />
+         <prop name="party" value="csc" />
+         <p>Certified by the regulators (Attestation) or certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years.</p>
+      </part>
+      <part id="th-cscs-certification.moderate.csp" name="certification">
+         <title>Moderate Impact — Cloud Service Provider</title>
+         <prop name="impact-level" value="moderate" />
+         <prop name="party" value="csp" />
+         <p>Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified at least to CSA STAR Level 2/CCM and ISO/IEC 27701.</p>
+      </part>
+      <part id="th-cscs-certification.high.minimum-requirements" name="minimum-requirements">
+         <title>High Impact — minimum requirements</title>
+         <prop name="impact-level" value="high" />
+         <p>Part One: - All Part Two: - All</p>
+      </part>
+      <part id="th-cscs-certification.high.csc" name="certification">
+         <title>High Impact — Cloud Service Customer</title>
+         <prop name="impact-level" value="high" />
+         <prop name="party" value="csc" />
+         <p>Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years</p>
+      </part>
+      <part id="th-cscs-certification.high.csp" name="certification">
+         <title>High Impact — Cloud Service Provider</title>
+         <prop name="impact-level" value="high" />
+         <prop name="party" value="csp" />
+         <p>Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified to either ISO/IEC 27017 or CSA STAR Level 2/CCM, and ISO/IEC 27018 and ISO/IEC 27701.</p>
+      </part>
+   </group>
+   <group id="th-cscs-part-one" class="standard-part">
+      <title>Part One: Cloud Security Governance</title>
+      <prop name="label" value="5.1" />
+      <prop name="standard-part" value="one" />
+      <group id="th-cscs-5.1.1" class="section">
+         <title>Information Security Policies</title>
+         <prop name="label" value="5.1.1" />
+         <prop name="standard-part" value="one" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.1.1-csc" class="cscs-requirement">
+            <title>Information Security Policies (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.1" />
+            <prop name="clause" value="5.1.1" />
+            <prop name="section" value="5.1.1" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="8" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.1.1-csc_smt" name="statement">
+               <part id="th-cscs-5.1.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>An information security policy for cloud computing shall be defined as a topic-specific policy of the cloud service customer. The cloud service customer's information security policy for cloud computing shall be consistent with the organization's acceptable levels of information security risks for its information and other assets.</p>
+               </part>
+               <part id="th-cscs-5.1.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>When defining the information security policy for cloud computing, the cloud service customer shall take the following into account:</p>
+                  <ul>
+                     <li>information stored in the cloud computing environment can be subject to access and management by the cloud service provider;</li>
+                     <li>assets can be maintained in the cloud computing environment, e.g., application programs;</li>
+                     <li>processes can run on a multi-tenant, virtualized cloud service;</li>
+                     <li>the cloud service users and the context in which they use the cloud service;</li>
+                     <li>the cloud service administrators of the cloud service customer who have privileged access;</li>
+                     <li>the geographical locations of the cloud service provider's organization and the countries where the cloud service provider can store the cloud service customer data (even temporarily).</li>
+                  </ul>
+               </part>
+               <part id="th-cscs-5.1.1-csc_smt.c" name="item">
+                  <prop name="label" value="c)" />
+                  <p>The personal data protection policy shall be augmented by a statement concerning support for and commitment to achieving compliance with applicable personal data protection legislation and the contractual terms agreed between the cloud service provider and the cloud service customer.</p>
+               </part>
+               <part id="th-cscs-5.1.1-csc_smt.d" name="item">
+                  <prop name="label" value="d)" />
+                  <p>Contractual agreements shall clearly allocate responsibilities between the cloud service provider, its sub-contractors and the cloud service customer, taking into account the type of cloud service in question (e.g. a service of an IaaS, PaaS or SaaS category of the cloud computing reference architecture). For example, the allocation of responsibility for application layer controls can differ depending on whether the cloud service provider is providing a SaaS service or rather is providing a PaaS or IaaS service on which the cloud service customer can build or layer its own applications.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.1.2" class="section">
+         <title>Organization of Information Security</title>
+         <prop name="label" value="5.1.2" />
+         <prop name="standard-part" value="one" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.1.2.1-csc" class="cscs-requirement">
+            <title>Information Security Roles and Responsibilities (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.2.1" />
+            <prop name="clause" value="5.1.2.1" />
+            <prop name="section" value="5.1.2" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="9" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.1.2.1-csc_smt" name="statement">
+               <part id="th-cscs-5.1.2.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall agree with the cloud service provider on an appropriate allocation of information security roles and responsibilities, and confirm that it can fulfil its allocated roles and responsibilities. The information security roles and responsibilities of both parties shall be stated in an agreement.</p>
+               </part>
+               <part id="th-cscs-5.1.2.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>The cloud service customer shall identify and manage its relationship with the customer support and care function of the customer cloud service provider.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.1.2.2-csc" class="cscs-requirement">
+            <title>Contact with Authorities (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.2.2" />
+            <prop name="clause" value="5.1.2.2" />
+            <prop name="section" value="5.1.2" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="10" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.1.2.2-csc_smt" name="statement">
+               <part id="th-cscs-5.1.2.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall identify the authorities relevant to the combined operation of the cloud service customer and the cloud service provider.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.1.3" class="section">
+         <title>Compliance</title>
+         <prop name="label" value="5.1.3" />
+         <prop name="standard-part" value="one" />
+         <prop name="minimum-impact-level" value="moderate" />
+         <control id="th-cscs-5.1.3.1-csc" class="cscs-requirement">
+            <title>Identification of Applicable Legislation and Contractual Requirements (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.3.1" />
+            <prop name="clause" value="5.1.3.1" />
+            <prop name="section" value="5.1.3" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="10" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.1.3.1-csc_smt" name="statement">
+               <part id="th-cscs-5.1.3.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall consider the issue that relevant laws and regulations can be those of jurisdictions governing the cloud service provider, in addition to those governing the cloud service customer.</p>
+               </part>
+               <part id="th-cscs-5.1.3.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>The cloud service customer shall request evidence of the cloud service provider's compliance with relevant regulations and standards required for the cloud service customer's business. Such evidence can be the certifications produced by third-party auditors.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.1.3.2-csc" class="cscs-requirement">
+            <title>Intellectual Property Rights (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.3.2" />
+            <prop name="clause" value="5.1.3.2" />
+            <prop name="section" value="5.1.3" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="10" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.1.3.2-csc_smt" name="statement">
+               <part id="th-cscs-5.1.3.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>Installing commercially licensed software in a cloud service can cause a breach of the license terms for the software. The cloud service customer shall have a procedure for identifying cloud-specific licensing requirements before permitting any licensed software to be installed in a cloud service. Particular attention shall be paid to cases where the cloud service is elastic and scalable and the software can be run on more systems or processor cores than is permitted by the license terms.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.1.3.3-csc" class="cscs-requirement">
+            <title>Protection of Records (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.3.3" />
+            <prop name="clause" value="5.1.3.3" />
+            <prop name="section" value="5.1.3" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="11" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.1.3.3-csc_smt" name="statement">
+               <part id="th-cscs-5.1.3.3-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall request information from the cloud service provider about the protection of records gathered and stored by the cloud service provider that are relevant to the use of cloud services by the cloud service customer.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.1.3.4-csc" class="cscs-requirement">
+            <title>Regulation of Cryptographic Controls (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.3.4" />
+            <prop name="clause" value="5.1.3.4" />
+            <prop name="section" value="5.1.3" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="11" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.1.3.4-csc_smt" name="statement">
+               <part id="th-cscs-5.1.3.4-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall verify that the set of cryptographic controls that apply to the use of a cloud service comply with relevant agreements, legislation and regulations.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.1.3.5-csc" class="cscs-requirement">
+            <title>Independent Review of Information Security (Cloud Service Customer)</title>
+            <prop name="label" value="5.1.3.5" />
+            <prop name="clause" value="5.1.3.5" />
+            <prop name="section" value="5.1.3" />
+            <prop name="standard-part" value="one" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="11" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.1.3.5-csc_smt" name="statement">
+               <part id="th-cscs-5.1.3.5-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall request documented evidence that the implementation of information security controls and guidelines for the cloud service is in line with any claims made by the cloud service provider. Such evidence could include certifications against relevant standards.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="th-cscs-part-two" class="standard-part">
+      <title>Part Two: Cloud Infrastructure Security and Operation</title>
+      <prop name="label" value="5.2" />
+      <prop name="standard-part" value="two" />
+      <group id="th-cscs-5.2.1" class="section">
+         <title>Human Resource Security</title>
+         <prop name="label" value="5.2.1" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.1.1-csc" class="cscs-requirement">
+            <title>Information Security Awareness, Education and Training (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.1.1" />
+            <prop name="clause" value="5.2.1.1" />
+            <prop name="section" value="5.2.1" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="12" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.1.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.1.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall add the following items to awareness, education and training programmes for cloud service business managers, cloud service administrators, cloud service integrators and cloud service users, including relevant employees and contractors:</p>
+                  <ul>
+                     <li>standards and procedures for the use of cloud services;</li>
+                     <li>information security risks relating to cloud services and how those risks are managed;</li>
+                     <li>system and network environment risks with the use of cloud services;</li>
+                     <li>personal data protection;</li>
+                     <li>applicable legal and regulatory considerations.</li>
+                  </ul>
+               </part>
+               <part id="th-cscs-5.2.1.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>Information security awareness, education and training programmes about cloud services shall be provided to management and the supervising managers, including those of business units.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.2" class="section">
+         <title>Asset Management</title>
+         <prop name="label" value="5.2.2" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.2.1-csc" class="cscs-requirement">
+            <title>Inventory of Assets (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.2.1" />
+            <prop name="clause" value="5.2.2.1" />
+            <prop name="section" value="5.2.2" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="13" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.2.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.2.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer's inventory of assets shall account for information and associated assets stored in the cloud computing environment. The records of the inventory should indicate where the assets are maintained, e.g., identification of the cloud service.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.2.2-csc" class="cscs-requirement">
+            <title>Labelling of Information (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.2.2" />
+            <prop name="clause" value="5.2.2.2" />
+            <prop name="section" value="5.2.2" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="13" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.2.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.2.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall label information and associated assets maintained in the cloud computing environment in accordance with the cloud service customer's adopted procedures for labelling.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.3" class="section">
+         <title>Access Control</title>
+         <prop name="label" value="5.2.3" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.3.1-csc" class="cscs-requirement">
+            <title>Access to Networks and Network Services (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.1" />
+            <prop name="clause" value="5.2.3.1" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="13" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer's access control policy for the use of network services shall specify requirements for user access to each separate cloud service that is used.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.2-csc" class="cscs-requirement">
+            <title>User Registration and Deregistration (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.2" />
+            <prop name="clause" value="5.2.3.2" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="13" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>Procedures for user registration and de- registration shall address the situation where user access control is compromised, such as the corruption or compromise of passwords or other user registration data (e.g. as a result of inadvertent disclosure).</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.4-csc" class="cscs-requirement">
+            <title>Management of Privileged Access Rights (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.4" />
+            <prop name="clause" value="5.2.3.4" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="14" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.4-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.4-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall use sufficient authentication techniques (e.g., multi-factor authentication) for authenticating the cloud service administrators of the cloud service customer to the administrative capabilities of a cloud service according to the identified risks.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.5-csc" class="cscs-requirement">
+            <title>Management of Secret Authentication Information of Users (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.5" />
+            <prop name="clause" value="5.2.3.5" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="14" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.5-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.5-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall verify that the cloud service provider's management procedure for allocating secret authentication information, such as passwords, meets the cloud service customer's requirements.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.6-csc" class="cscs-requirement">
+            <title>Information Access Restriction (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.6" />
+            <prop name="clause" value="5.2.3.6" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="14" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.6-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.6-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall ensure that access to information in the cloud service can be restricted in accordance with its access control policy and that such restrictions are realized. This includes restricting access to cloud services, cloud service functions, and cloud service customer data maintained in the service.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.7-csc" class="cscs-requirement">
+            <title>Use of Privilege Utility Programs (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.7" />
+            <prop name="clause" value="5.2.3.7" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="15" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.7-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.7-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>Where the use of utility programs is permitted, the cloud service customer shall identify the utility programs to be used in its cloud computing environment, and ensure that they do not interfere with the controls of the cloud service.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.3.8-csc" class="cscs-requirement">
+            <title>Secure Log-on Procedures (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.3.8" />
+            <prop name="clause" value="5.2.3.8" />
+            <prop name="section" value="5.2.3" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="15" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.3.8-csc_smt" name="statement">
+               <part id="th-cscs-5.2.3.8-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>Cloud service customers shall require users under their control to follow secure log-on procedures for any account.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.4" class="section">
+         <title>Cryptography</title>
+         <prop name="label" value="5.2.4" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.4.1-csc" class="cscs-requirement">
+            <title>Policy on the Use of Cryptographic Controls (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.4.1" />
+            <prop name="clause" value="5.2.4.1" />
+            <prop name="section" value="5.2.4" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="15" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.4.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.4.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall implement cryptographic controls for its use whether those controls are supplied by the cloud service customer or by the cloud service provider.</p>
+               </part>
+               <part id="th-cscs-5.2.4.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>When the cloud service provider offers cryptography, the cloud service customer shall review any information supplied by the cloud service provider to confirm whether the cryptographic capabilities:</p>
+                  <ul>
+                     <li>meet the cloud service customer's policy requirements;</li>
+                     <li>are compatible with any other cryptographic protection used by the cloud service customer;</li>
+                     <li>apply to data at rest and in transit to, from and within the cloud service.</li>
+                  </ul>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.4.2-csc" class="cscs-requirement">
+            <title>Key Management (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.4.2" />
+            <prop name="clause" value="5.2.4.2" />
+            <prop name="section" value="5.2.4" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="16" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.4.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.4.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall identify the cryptographic keys for each cloud service, and implement procedures for key management.</p>
+               </part>
+               <part id="th-cscs-5.2.4.2-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>Where the cloud service provides key management functionality for use by the cloud service customer, the cloud service customer shall request the following information on the procedures used to manage keys related to the cloud service:</p>
+                  <ul>
+                     <li>type of keys;</li>
+                     <li>specifications of the key management system, including procedures for each stage of the key life-cycle, i.e., generating, changing or updating, storing, retiring, retrieving, retaining and destroying;</li>
+                     <li>recommended key management procedures for use by the cloud service customer.</li>
+                  </ul>
+               </part>
+               <part id="th-cscs-5.2.4.2-csc_smt.c" name="item">
+                  <prop name="label" value="c)" />
+                  <p>The cloud service customer shall not permit the cloud service provider to store and manage the encryption keys for cryptographic operations when the cloud service customer employs its own key management.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.7" class="section">
+         <title>Communication Security</title>
+         <prop name="label" value="5.2.7" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="moderate" />
+         <control id="th-cscs-5.2.7.1-csc" class="cscs-requirement">
+            <title>Information Transfer Policies and Procedures (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.7.1" />
+            <prop name="clause" value="5.2.7.1" />
+            <prop name="section" value="5.2.7" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="21" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.2.7.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.7.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>Whenever physical media are used for information transfer, a system shall be put in place to record incoming and outgoing physical media containing personal data, including the type of physical media, the authorized sender/recipients, the date and time, and the number of physical media</p>
+               </part>
+               <part id="th-cscs-5.2.7.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>Cloud service customer shall request cloud service providers to put additional measures in place (such as encryption) to ensure that data can only be accessed at the point of destination and not in transit.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.7.2-csc" class="cscs-requirement">
+            <title>Segregation of Networks (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.7.2" />
+            <prop name="clause" value="5.2.7.2" />
+            <prop name="section" value="5.2.7" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="22" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.2.7.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.7.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall defines its requirements for segregating networks to achieve tenant isolation in the shared environment of a cloud service and verify that the cloud service provider meets those requirements.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.8" class="section">
+         <title>System Acquisition, Development, and Maintenance</title>
+         <prop name="label" value="5.2.8" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.8.1-csc" class="cscs-requirement">
+            <title>Information Security Requirements Analysis and Specification (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.8.1" />
+            <prop name="clause" value="5.2.8.1" />
+            <prop name="section" value="5.2.8" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="22" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.8.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.8.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall determine its information security requirements for the cloud service and then evaluate whether services offered by a cloud service provider can meet these requirements.</p>
+               </part>
+               <part id="th-cscs-5.2.8.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>For this evaluation, the cloud service customer must request information on the information security capabilities from the cloud service provider.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.8.2-csc" class="cscs-requirement">
+            <title>Secure Development Policy (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.8.2" />
+            <prop name="clause" value="5.2.8.2" />
+            <prop name="section" value="5.2.8" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="22" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.8.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.8.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer must request information from the cloud service provider about the cloud service provider's use of secure development procedures and practices.</p>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.9" class="section">
+         <title>Supplier Relationships</title>
+         <prop name="label" value="5.2.9" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="low" />
+         <control id="th-cscs-5.2.9.1-csc" class="cscs-requirement">
+            <title>Information Security Policy for Supplier Relationships (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.9.1" />
+            <prop name="clause" value="5.2.9.1" />
+            <prop name="section" value="5.2.9" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="23" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.9.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.9.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall include the cloud service provider as a type of supplier in its information security policy for supplier relationships. This will help to mitigate risks associated with the cloud service provider's access to and management of the cloud service customer data.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.9.2-csc" class="cscs-requirement">
+            <title>Addressing Security within Supplier Agreements (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.9.2" />
+            <prop name="clause" value="5.2.9.2" />
+            <prop name="section" value="5.2.9" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="23" />
+            <prop name="minimum-impact-level" value="low" />
+            <part id="th-cscs-5.2.9.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.9.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall confirm the information security roles and responsibilities relating to the cloud service, as described in the service agreement. These can include the following processes:</p>
+                  <ul>
+                     <li>malware protection;</li>
+                     <li>backup;</li>
+                     <li>cryptographic controls;</li>
+                     <li>vulnerability management;</li>
+                     <li>incident management;</li>
+                     <li>technical compliance checking;</li>
+                     <li>security testing;</li>
+                     <li>auditing;</li>
+                     <li>collection, maintenance and protection of evidence, including logs and audit trails;</li>
+                     <li>protection of information upon termination of the service agreement;</li>
+                     <li>authentication and access control;</li>
+                     <li>identity and access management.</li>
+                  </ul>
+               </part>
+            </part>
+         </control>
+      </group>
+      <group id="th-cscs-5.2.10" class="section">
+         <title>Information Security Incident Management</title>
+         <prop name="label" value="5.2.10" />
+         <prop name="standard-part" value="two" />
+         <prop name="minimum-impact-level" value="moderate" />
+         <control id="th-cscs-5.2.10.1-csc" class="cscs-requirement">
+            <title>Responsibilities and Procedures (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.10.1" />
+            <prop name="clause" value="5.2.10.1" />
+            <prop name="section" value="5.2.10" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="24" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.2.10.1-csc_smt" name="statement">
+               <part id="th-cscs-5.2.10.1-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall verify the allocation of responsibilities for information security incident management and shall ensure that it meets the requirements of the cloud service customer.</p>
+               </part>
+               <part id="th-cscs-5.2.10.1-csc_smt.b" name="item">
+                  <prop name="label" value="b)" />
+                  <p>An information security incident shall trigger a review by the cloud service customer, or jointly between the cloud service customer and the cloud service provider, as part of their information security incident management process, to determine whether a personal data breach has occurred.</p>
+               </part>
+            </part>
+         </control>
+         <control id="th-cscs-5.2.10.2-csc" class="cscs-requirement">
+            <title>Reporting Information Security Events (Cloud Service Customer)</title>
+            <prop name="label" value="5.2.10.2" />
+            <prop name="clause" value="5.2.10.2" />
+            <prop name="section" value="5.2.10" />
+            <prop name="standard-part" value="two" />
+            <prop name="party" value="csc" />
+            <prop name="party-title" value="Cloud Service Customer" />
+            <prop name="source-page" value="25" />
+            <prop name="minimum-impact-level" value="moderate" />
+            <part id="th-cscs-5.2.10.2-csc_smt" name="statement">
+               <part id="th-cscs-5.2.10.2-csc_smt.a" name="item">
+                  <prop name="label" value="a)" />
+                  <p>The cloud service customer shall request information from the cloud service provider about the mechanisms for:</p>
+                  <ul>
+                     <li>the cloud service customer to report an information security event it has detected to the cloud service provider;</li>
+                     <li>the cloud service provider to receive reports regarding an information security event detected by the cloud service provider;</li>
+                     <li>the cloud service customer to track the status of a reported information security event.</li>
+                  </ul>
+               </part>
+            </part>
+         </control>
+      </group>
+   </group>
+   <back-matter>
+      <resource uuid="f7068d06-08a5-52e6-8332-8994843ebf2d">
+         <title>Notification of the National Cyber Security Committee Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024) - unofficial English translation, version 1.1</title>
+         <description>
+            <p>The document this catalog was generated from. Marked "Unofficial Translation" on every page; the Thai text in the Royal Thai Government Gazette is the only version with legal force.</p>
+         </description>
+         <prop name="sha256" value="ee55bc0b5d371e66d4f3ee9f3312712326c1f443dfab8e614fee1e885fe6a679" />
+         <prop name="edition" value="cscs-v1.1" />
+         <rlink href="https://drive.ncsa.or.th/s/qPRnkzBiB3iyNXJ/download" media-type="application/pdf" />
+      </resource>
+      <resource uuid="3e449401-92ca-5b9d-8217-7bbfef0d8289">
+         <title>Royal Thai Government Gazette publication of the Notification (official Thai text)</title>
+         <description>
+            <p>The official Thai text. Not parsed by this pipeline.</p>
+         </description>
+         <rlink href="https://ratchakitcha.soc.go.th/documents/43184.pdf" media-type="application/pdf" />
+      </resource>
+      <resource uuid="c84d0e16-4b7a-51af-a8dc-2a0cbd10122e">
+         <title>Cybersecurity Act, B.E. 2562 (2019)</title>
+         <description>
+            <p>The enabling instrument. Section 9(4) empowers the National Cyber Security Committee to issue cybersecurity standards, and this notification is issued under it.</p>
+         </description>
+         <rlink href="https://ratchakitcha.soc.go.th/documents/17ก/69/1.pdf" media-type="application/pdf" />
+      </resource>
+      <resource uuid="566558a2-7d93-5a9f-9a53-53f2b059e61d">
+         <title>Notification of the National Cyber Security Committee Re: Standards for Cybersecurity Categorization of Data or Information Systems, B.E. 2566 (2023)</title>
+         <description>
+            <p>The instrument that defines the low, moderate and high impact levels this standard's minimum requirements are graded against. Clauses 4 and 5 and the clause 4 matrix all refer to it; it is not converted here.</p>
+         </description>
+      </resource>
+      <resource uuid="d02bb643-223d-553b-b1f8-5e169a2b6816">
+         <title>Notification of the National Cyber Security Committee Re: Standards and Guidelines for the Development of Cybersecurity Services, B.E. 2566 (2023)</title>
+         <description>
+            <p>Governs accreditation of the certifying bodies named in the certification regime.</p>
+         </description>
+      </resource>
+      <resource uuid="dfe3edd6-9eb5-5056-9c29-2defdf3c87af">
+         <title>Notification of the Cybersecurity Regulating Committee Re: Codes of Practice and Standards Framework for Government Agencies and Organization of Critical Information Infrastructure Agencies, B.E. 2564 (2021)</title>
+      </resource>
+      <resource uuid="84c59201-d176-58cd-a50b-a6b4ca0199c2">
+         <title>ISO/IEC 27017:2015 Information technology — Security techniques — Code of practice for information security controls based on ISO/IEC 27002 for cloud services</title>
+         <description>
+            <p>Normative reference. The clause structure and much of the wording of clause 5 follow it, and the v1.1 translation moved further toward its vocabulary.</p>
+         </description>
+      </resource>
+      <resource uuid="e686b9fd-bfed-5f03-95fa-4f55972249b0">
+         <title>ISO/IEC 27018:2019 Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors</title>
+      </resource>
+      <resource uuid="f4d7ab16-a48c-5c07-882d-060473e4df97">
+         <title>ISO/IEC 22123-1:2023 Information technology — Cloud computing — Part 1: Vocabulary</title>
+      </resource>
+   </back-matter>
+</catalog>

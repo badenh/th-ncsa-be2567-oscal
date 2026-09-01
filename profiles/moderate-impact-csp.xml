@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="0095dda6-2374-5ae4-8a7a-83ae5b99f94a">
+   <metadata>
+      <title>Cybersecurity Standards for Cloud Systems — Moderate Impact, Cloud Service Provider</title>
+      <published>2024-09-10T00:00:00+07:00</published>
+      <last-modified>2025-09-01T00:00:00+07:00</last-modified>
+      <version>1.1</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="impact-level x party" />
+      <prop name="impact-level" value="moderate" />
+      <prop name="party" value="csp" />
+      <prop name="party-title" value="Cloud Service Provider" />
+      <prop name="source-clause" value="4" />
+      <prop name="certification" value="Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified at least to CSA STAR Level 2/CCM and ISO/IEC 27701." />
+      <link href="https://cloudsecurity.ncsa.or.th/publicationdocuments.html" rel="canonical" />
+      <remarks>
+         <p>Moderate Impact baseline for a Cloud Service Provider (CSP), from the minimum-requirements matrix in clause 4 of the annex.</p>
+         <p>Selects 27 of the catalog's 37 cloud service provider controls, of which 9 are added at this level (5.1.3, 5.2.7, 5.2.10) over the low-impact profile.</p>
+         <p>Minimum requirements as the matrix states them: Part One: - All Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.7, 5.2.8, 5.2.9, and 5.2.10 *Without 5.2.5</p>
+         <p>Certification required of the cloud service provider at this level: Certified by a certify body on a 3-year cycle. This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified at least to CSA STAR Level 2/CCM and ISO/IEC 27701.</p>
+         <p>This profile is a rendering of a published standard and carries no roles or parties: the National Cyber Security Committee issued the standard, not this file.</p>
+      </remarks>
+   </metadata>
+   <import href="./low-impact-csp.xml">
+      <include-all />
+   </import>
+   <import href="../catalogs/th-cscs.xml">
+      <include-controls>
+         <with-id>th-cscs-5.1.3.1-csp</with-id>
+         <with-id>th-cscs-5.1.3.2-csp</with-id>
+         <with-id>th-cscs-5.1.3.3-csp</with-id>
+         <with-id>th-cscs-5.1.3.4-csp</with-id>
+         <with-id>th-cscs-5.1.3.5-csp</with-id>
+         <with-id>th-cscs-5.2.7.1-csp</with-id>
+         <with-id>th-cscs-5.2.7.2-csp</with-id>
+         <with-id>th-cscs-5.2.10.1-csp</with-id>
+         <with-id>th-cscs-5.2.10.2-csp</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

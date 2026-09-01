@@ -1,0 +1,3483 @@
+catalog:
+  uuid: d04e4751-02da-5070-bbdb-cda03db397e1
+  metadata:
+    title: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024)
+    published: '2024-09-10T00:00:00+07:00'
+    last-modified: '2025-09-01T00:00:00+07:00'
+    version: '1.1'
+    oscal-version: 1.2.3
+    props:
+    - name: source-edition
+      value: cscs-v1.1
+    - name: translation-status
+      value: unofficial
+    - name: given-date
+      value: '2024-09-10'
+    - name: in-force-date
+      value: '2026-09-10'
+    - name: issuing-instrument
+      value: Cybersecurity Act B.E. 2562 (2019), Section 9(4)
+    links:
+    - href: https://cloudsecurity.ncsa.or.th/publicationdocuments.html
+      rel: canonical
+    roles:
+    - id: issuing-authority
+      title: Issuing authority
+      description: The body that issued the notification.
+    - id: publisher
+      title: Publisher
+      description: The body that publishes the notification and this English translation.
+    parties:
+    - uuid: c0e7c559-bbff-51b2-bdfb-e1d4ead8c436
+      type: organization
+      name: National Cyber Security Committee
+      short-name: NCSC
+    - uuid: 6b77b350-05ec-5ed8-b7bf-5711f24ba08e
+      type: organization
+      name: Office of the National Cyber Security Agency
+      short-name: NCSA
+    responsible-parties:
+    - role-id: issuing-authority
+      party-uuids:
+      - c0e7c559-bbff-51b2-bdfb-e1d4ead8c436
+    - role-id: publisher
+      party-uuids:
+      - 6b77b350-05ec-5ed8-b7bf-5711f24ba08e
+    remarks: 'Generated from the NCSA''s published PDF by `pdf_to_catalog.py`. The framework content is
+      the National Cyber Security Committee''s; the OSCAL rendering is not theirs and they have not reviewed
+      it, which is why the parties above describe the source document and no party is named as an author
+      of this catalog.
+
+
+      The source is an unofficial English translation. Clause 5 was retranslated between version 1.0 and
+      version 1.1 — same 41 clauses and the same clause 4 matrix, substantially different English — so
+      `metadata.version` is the *translation* version, not a version of the standard.
+
+
+      Each clause of the standard is two controls, one per party column, suffixed `-csc` and `-csp`. Six
+      clauses address one party only and mint one control. Sections carry `props[name=minimum-impact-level]`,
+      the weakest impact level at which the clause 4 matrix requires them.'
+    revisions:
+    - version: '1.0'
+      remarks: 'Oct 2024: Initial version'
+    - version: '1.1'
+      remarks: 'Sep 2025: Updated contents in section 5. Standards for Cybersecurity of Cloud Systems'
+  groups:
+  - id: th-cscs-notification
+    class: front-matter
+    title: The Notification
+    props:
+    - name: sort-id
+      value: '00'
+    parts:
+    - id: th-cscs-notification.clause-1
+      name: provision
+      title: Clause 1
+      props:
+      - name: label
+        value: Clause 1
+      prose: 'This notification shall be called the Notification of the National Cyber Security Committee
+        Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024)."'
+    - id: th-cscs-notification.clause-2
+      name: provision
+      title: Clause 2
+      props:
+      - name: label
+        value: Clause 2
+      prose: This notification shall come into force two years after its publication in the Royal Thai
+        Government Gazette.
+    - id: th-cscs-notification.clause-3
+      name: provision
+      title: Clause 3
+      props:
+      - name: label
+        value: Clause 3
+      prose: 'In this notification: "Agency" refers to government agencies, regulators, and organizations
+        of critical information infrastructure as defined by the Cybersecurity Act, B.E. 2562 (2019).
+        "Cloud Computing" refers to the concept of accessing information networks consisting of shareable,
+        elastic, and scalable physical or virtual resources through self-service provisioning and on-demand
+        administration. "Cloud Service" refers to the capability to perform cloud computing, which is
+        accessible via a designated interface. "Cloud Service Category" refers to a group of cloud services
+        with certain shared characteristics, categorized as follows: (1) Infrastructure as a Service (IaaS):
+        Comprising computing systems, data storage, networks, and other relevant resources, where users
+        can efficiently use software on provided infrastructure without managing the underlying infrastructure.
+        (2) Platform as a Service (PaaS): Comprising application platforms, databases, and computer services,
+        where users can develop, deploy, and configure software without managing the underlying infrastructure.
+        (3) Software as a Service (SaaS): Where providers offer ready-to-use software, and users manage
+        configurations, parameters, processing units, and storage to achieve their service objectives.
+        (4) Any combination of services from (1) to (3). (5) Other services as notified by the Office.
+        "Public Cloud" refers to cloud services accessible by any cloud service user, with resources controlled
+        by the cloud service provider. "Cloud Service Customer" (CSC) refers to an agency with a formal
+        contract to use cloud services provided by a cloud service provider. "Cloud Service Provider"
+        (CSP) refers to a public or private entity that makes cloud services available to customers, managing
+        resources to ensure availability, security, and scalability for its users. "Personal Data" refers
+        to personal data as defined in Section 6 of the Personal Data Protection Act, B.E. 2562 (2019).
+        "Office" refers to the Office of the National Cyber Security Agency.'
+    - id: th-cscs-notification.clause-4
+      name: provision
+      title: Clause 4
+      props:
+      - name: label
+        value: Clause 4
+      prose: 'Agencies using public cloud services must comply with this standard, taking into account
+        the impact level of data or information systems as specified in the Notification of the National
+        Cyber Security Committee Re: Standards for Cybersecurity Categorization of Data or Information
+        Systems, B.E. 2566 (2023), and must meet at least the minimum requirements set out at the end
+        of this notification.'
+    - id: th-cscs-notification.clause-5
+      name: provision
+      title: Clause 5
+      props:
+      - name: label
+        value: Clause 5
+      prose: 'For personal data, the impact level for confidentiality must be classified at least as medium,
+        as specified in the Notification of the National Cyber Security Committee Re: Standards for Cybersecurity
+        Categorization of Data or Information Systems, B.E. 2566 (2023), and must meet at least the minimum
+        requirements set out at the end of this notification.'
+    - id: th-cscs-notification.clause-6
+      name: provision
+      title: Clause 6
+      props:
+      - name: label
+        value: Clause 6
+      prose: Agencies must submit a summary report of the actions taken to the Office within 30 days of
+        completion.
+    - id: th-cscs-notification.clause-7
+      name: provision
+      title: Clause 7
+      props:
+      - name: label
+        value: Clause 7
+      prose: The Secretary-General of the National Cyber Security Committee is responsible for enforcing
+        this notification and is authorized to issue notifications, orders, criteria, and procedures to
+        comply with this notification. In case of any issues related to compliance with this notification
+        or matters not specified herein, the Chairman of the National Cyber Security Committee shall have
+        the authority to interpret and adjudicate, and such interpretation and decision shall be final.
+        Given on 10 September B.E. 2567 (2024) Phumtham Wechayachai Deputy Prime Minister as Chairman
+        of the National Cyber Security Committee
+  - id: th-cscs-definitions
+    class: front-matter
+    title: Definitions
+    props:
+    - name: sort-id
+      value: '01'
+    parts:
+    - id: th-cscs-definitions.agency
+      name: definition
+      title: Agency
+      props:
+      - name: term
+        value: Agency
+      prose: '"Agency" refers to government agencies, regulators, and organizations of critical information
+        infrastructure as defined by the Cybersecurity Act, B.E. 2562 (2019).'
+    - id: th-cscs-definitions.cloud-computing
+      name: definition
+      title: Cloud Computing
+      props:
+      - name: term
+        value: Cloud Computing
+      prose: '"Cloud Computing" refers to the concept of accessing information networks consisting of
+        shareable, elastic, and scalable physical or virtual resources through self-service provisioning
+        and on-demand administration.'
+    - id: th-cscs-definitions.cloud-service
+      name: definition
+      title: Cloud Service
+      props:
+      - name: term
+        value: Cloud Service
+      prose: '"Cloud Service" refers to the capability to perform cloud computing, which is accessible
+        via a designated interface.'
+    - id: th-cscs-definitions.cloud-service-category
+      name: definition
+      title: Cloud Service Category
+      props:
+      - name: term
+        value: Cloud Service Category
+      prose: '"Cloud Service Category" refers to a group of cloud services with certain shared characteristics,
+        categorized as follows: (1) Infrastructure as a Service (IaaS): Comprising computing systems,
+        data storage, networks, and other relevant resources, where users can efficiently use software
+        on provided infrastructure without managing the underlying infrastructure. (2) Platform as a Service
+        (PaaS): Comprising application platforms, databases, and computer services, where users can develop,
+        deploy, and configure software without managing the underlying infrastructure. (3) Software as
+        a Service (SaaS): Where providers offer ready-to-use software, and users manage configurations,
+        parameters, processing units, and storage to achieve their service objectives. (4) Any combination
+        of services from (1) to (3). (5) Other services as notified by the Office.'
+    - id: th-cscs-definitions.public-cloud
+      name: definition
+      title: Public Cloud
+      props:
+      - name: term
+        value: Public Cloud
+      prose: '"Public Cloud" refers to cloud services accessible by any cloud service user, with resources
+        controlled by the cloud service provider.'
+    - id: th-cscs-definitions.cloud-service-customer
+      name: definition
+      title: Cloud Service Customer (CSC)
+      props:
+      - name: term
+        value: Cloud Service Customer
+      - name: abbreviation
+        value: CSC
+      prose: '"Cloud Service Customer" refers to an agency with a formal contract to use cloud services
+        provided by a cloud service provider.'
+    - id: th-cscs-definitions.cloud-service-provider
+      name: definition
+      title: Cloud Service Provider (CSP)
+      props:
+      - name: term
+        value: Cloud Service Provider
+      - name: abbreviation
+        value: CSP
+      prose: '"Cloud Service Provider" refers to a public or private entity that makes cloud services
+        available to customers, managing resources to ensure availability, security, and scalability for
+        its users.'
+    - id: th-cscs-definitions.personal-data
+      name: definition
+      title: Personal Data
+      props:
+      - name: term
+        value: Personal Data
+      prose: '"Personal Data" refers to personal data as defined in Section 6 of the Personal Data Protection
+        Act, B.E. 2562 (2019).'
+    - id: th-cscs-definitions.office
+      name: definition
+      title: Office
+      props:
+      - name: term
+        value: Office
+      prose: '"Office" refers to the Office of the National Cyber Security Agency.'
+  - id: th-cscs-certification
+    class: front-matter
+    title: Minimum Requirements and Certification
+    props:
+    - name: sort-id
+      value: '02'
+    - name: source-clause
+      value: '4'
+    parts:
+    - id: th-cscs-certification.low.minimum-requirements
+      name: minimum-requirements
+      title: Low Impact — minimum requirements
+      props:
+      - name: impact-level
+        value: low
+      prose: 'Part One: - 5.1.1 and 5.1.2 Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.8, and 5.2.9 *Without
+        5.2.5'
+    - id: th-cscs-certification.low.csc
+      name: certification
+      title: Low Impact — Cloud Service Customer
+      props:
+      - name: impact-level
+        value: low
+      - name: party
+        value: csc
+      prose: Self-assessment along with supporting documentation and approval from the highest executive
+        of the organization, the assessment must be retained by the organization and submitted to the
+        office
+    - id: th-cscs-certification.low.csp
+      name: certification
+      title: Low Impact — Cloud Service Provider
+      props:
+      - name: impact-level
+        value: low
+      - name: party
+        value: csp
+      prose: Certified by certify bodies on a 3-year cycle, consisting of certification the 1st year and
+        surveillance audits in the 2nd and 3rd years, certification must also be certified to at least
+        ISO/IEC 27001 and CSA STAR Level 1/CCM Lite.
+    - id: th-cscs-certification.moderate.minimum-requirements
+      name: minimum-requirements
+      title: Moderate Impact — minimum requirements
+      props:
+      - name: impact-level
+        value: moderate
+      prose: 'Part One: - All Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.7, 5.2.8, 5.2.9, and 5.2.10
+        *Without 5.2.5'
+    - id: th-cscs-certification.moderate.csc
+      name: certification
+      title: Moderate Impact — Cloud Service Customer
+      props:
+      - name: impact-level
+        value: moderate
+      - name: party
+        value: csc
+      prose: Certified by the regulators (Attestation) or certified by a certify body on a 3-year cycle.
+        This includes a full certification in the 1st year and a surveillance audit in the 2nd and 3rd
+        years.
+    - id: th-cscs-certification.moderate.csp
+      name: certification
+      title: Moderate Impact — Cloud Service Provider
+      props:
+      - name: impact-level
+        value: moderate
+      - name: party
+        value: csp
+      prose: Certified by a certify body on a 3-year cycle. This includes a full certification in the
+        1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified
+        at least to CSA STAR Level 2/CCM and ISO/IEC 27701.
+    - id: th-cscs-certification.high.minimum-requirements
+      name: minimum-requirements
+      title: High Impact — minimum requirements
+      props:
+      - name: impact-level
+        value: high
+      prose: 'Part One: - All Part Two: - All'
+    - id: th-cscs-certification.high.csc
+      name: certification
+      title: High Impact — Cloud Service Customer
+      props:
+      - name: impact-level
+        value: high
+      - name: party
+        value: csc
+      prose: Certified by a certify body on a 3-year cycle. This includes a full certification in the
+        1st year and a surveillance audit in the 2nd and 3rd years
+    - id: th-cscs-certification.high.csp
+      name: certification
+      title: High Impact — Cloud Service Provider
+      props:
+      - name: impact-level
+        value: high
+      - name: party
+        value: csp
+      prose: Certified by a certify body on a 3-year cycle. This includes a full certification in the
+        1st year and a surveillance audit in the 2nd and 3rd years. Additionally, it must also be certified
+        to either ISO/IEC 27017 or CSA STAR Level 2/CCM, and ISO/IEC 27018 and ISO/IEC 27701.
+  - id: th-cscs-part-one
+    class: standard-part
+    title: 'Part One: Cloud Security Governance'
+    props:
+    - name: label
+      value: '5.1'
+    - name: standard-part
+      value: one
+    groups:
+    - id: th-cscs-5.1.1
+      class: section
+      title: Information Security Policies
+      props:
+      - name: label
+        value: 5.1.1
+      - name: standard-part
+        value: one
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.1.1-csc
+        class: cscs-requirement
+        title: Information Security Policies (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.1
+        - name: clause
+          value: 5.1.1
+        - name: section
+          value: 5.1.1
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '8'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: An information security policy for cloud computing shall be defined as a topic-specific
+              policy of the cloud service customer. The cloud service customer's information security
+              policy for cloud computing shall be consistent with the organization's acceptable levels
+              of information security risks for its information and other assets.
+          - id: th-cscs-5.1.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: 'When defining the information security policy for cloud computing, the cloud service
+              customer shall take the following into account:
+
+
+              - information stored in the cloud computing environment can be subject to access and management
+              by the cloud service provider;
+
+
+              - assets can be maintained in the cloud computing environment, e.g., application programs;
+
+
+              - processes can run on a multi-tenant, virtualized cloud service;
+
+
+              - the cloud service users and the context in which they use the cloud service;
+
+
+              - the cloud service administrators of the cloud service customer who have privileged access;
+
+
+              - the geographical locations of the cloud service provider''s organization and the countries
+              where the cloud service provider can store the cloud service customer data (even temporarily).'
+          - id: th-cscs-5.1.1-csc_smt.c
+            name: item
+            props:
+            - name: label
+              value: c)
+            prose: The personal data protection policy shall be augmented by a statement concerning support
+              for and commitment to achieving compliance with applicable personal data protection legislation
+              and the contractual terms agreed between the cloud service provider and the cloud service
+              customer.
+          - id: th-cscs-5.1.1-csc_smt.d
+            name: item
+            props:
+            - name: label
+              value: d)
+            prose: Contractual agreements shall clearly allocate responsibilities between the cloud service
+              provider, its sub-contractors and the cloud service customer, taking into account the type
+              of cloud service in question (e.g. a service of an IaaS, PaaS or SaaS category of the cloud
+              computing reference architecture). For example, the allocation of responsibility for application
+              layer controls can differ depending on whether the cloud service provider is providing a
+              SaaS service or rather is providing a PaaS or IaaS service on which the cloud service customer
+              can build or layer its own applications.
+      - id: th-cscs-5.1.1-csp
+        class: cscs-requirement
+        title: Information Security Policies (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.1
+        - name: clause
+          value: 5.1.1
+        - name: section
+          value: 5.1.1
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '8'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall augment its information security policy to address
+              the provision and use of its cloud services, taking the following into account:
+
+
+              - the baseline information security requirements applicable to the design and implementation
+              of the cloud service;
+
+
+              - risks from authorized insiders;
+
+
+              - multi-tenancy and cloud service customer isolation (including virtualization);
+
+
+              - access to cloud service customer assets by staff of the cloud service provider;
+
+
+              - access control procedures, e.g., strong authentication for administrative access to cloud
+              services;
+
+
+              - communications to cloud service customers during change management;
+
+
+              - virtualization security;
+
+
+              - access to and protection of cloud service customer data;
+
+
+              - lifecycle management of cloud service customer accounts;
+
+
+              - communication of breaches and information sharing guidelines to aid investigations and
+              forensics.'
+    - id: th-cscs-5.1.2
+      class: section
+      title: Organization of Information Security
+      props:
+      - name: label
+        value: 5.1.2
+      - name: standard-part
+        value: one
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.1.2.1-csc
+        class: cscs-requirement
+        title: Information Security Roles and Responsibilities (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.2.1
+        - name: clause
+          value: 5.1.2.1
+        - name: section
+          value: 5.1.2
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '9'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.2.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.2.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall agree with the cloud service provider on an appropriate
+              allocation of information security roles and responsibilities, and confirm that it can fulfil
+              its allocated roles and responsibilities. The information security roles and responsibilities
+              of both parties shall be stated in an agreement.
+          - id: th-cscs-5.1.2.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service customer shall identify and manage its relationship with the customer
+              support and care function of the customer cloud service provider.
+      - id: th-cscs-5.1.2.1-csp
+        class: cscs-requirement
+        title: Information Security Roles and Responsibilities (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.2.1
+        - name: clause
+          value: 5.1.2.1
+        - name: section
+          value: 5.1.2
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '9'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.2.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.2.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall agree and document an appropriate allocation of information
+              security roles and responsibilities with its cloud service customers, its cloud service
+              providers, and its suppliers.
+          - id: th-cscs-5.1.2.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service provider shall appoint a Data Protection Officer to act as the liaison
+              with the cloud service customer.
+      - id: th-cscs-5.1.2.2-csc
+        class: cscs-requirement
+        title: Contact with Authorities (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.2.2
+        - name: clause
+          value: 5.1.2.2
+        - name: section
+          value: 5.1.2
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.2.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.2.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall identify the authorities relevant to the combined
+              operation of the cloud service customer and the cloud service provider.
+      - id: th-cscs-5.1.2.2-csp
+        class: cscs-requirement
+        title: Contact with Authorities (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.2.2
+        - name: clause
+          value: 5.1.2.2
+        - name: section
+          value: 5.1.2
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.1.2.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.2.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall inform the cloud service customer of the geographical
+              locations of the cloud service provider's organization and the countries where the cloud
+              service provider can store the cloud service customer data.
+    - id: th-cscs-5.1.3
+      class: section
+      title: Compliance
+      props:
+      - name: label
+        value: 5.1.3
+      - name: standard-part
+        value: one
+      - name: minimum-impact-level
+        value: moderate
+      controls:
+      - id: th-cscs-5.1.3.1-csc
+        class: cscs-requirement
+        title: Identification of Applicable Legislation and Contractual Requirements (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.3.1
+        - name: clause
+          value: 5.1.3.1
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall consider the issue that relevant laws and regulations
+              can be those of jurisdictions governing the cloud service provider, in addition to those
+              governing the cloud service customer.
+          - id: th-cscs-5.1.3.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service customer shall request evidence of the cloud service provider's compliance
+              with relevant regulations and standards required for the cloud service customer's business.
+              Such evidence can be the certifications produced by third-party auditors.
+      - id: th-cscs-5.1.3.1-csp
+        class: cscs-requirement
+        title: Identification of Applicable Legislation and Contractual Requirements (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.3.1
+        - name: clause
+          value: 5.1.3.1
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall inform the cloud service customer of the legal jurisdictions
+              governing the cloud service.
+          - id: th-cscs-5.1.3.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service provider shall identify its own relevant legal requirements (e.g.,
+              regarding encryption to protect personal data) This information shall also be provided to
+              the cloud service customer when requested.
+          - id: th-cscs-5.1.3.1-csp_smt.c
+            name: item
+            props:
+            - name: label
+              value: c)
+            prose: The cloud service provider shall provide the cloud service customer with evidence of
+              its current compliance with applicable legislation and contractual requirements.
+      - id: th-cscs-5.1.3.2-csc
+        class: cscs-requirement
+        title: Intellectual Property Rights (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.3.2
+        - name: clause
+          value: 5.1.3.2
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Installing commercially licensed software in a cloud service can cause a breach of
+              the license terms for the software. The cloud service customer shall have a procedure for
+              identifying cloud-specific licensing requirements before permitting any licensed software
+              to be installed in a cloud service. Particular attention shall be paid to cases where the
+              cloud service is elastic and scalable and the software can be run on more systems or processor
+              cores than is permitted by the license terms.
+      - id: th-cscs-5.1.3.2-csp
+        class: cscs-requirement
+        title: Intellectual Property Rights (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.3.2
+        - name: clause
+          value: 5.1.3.2
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '10'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall establish a process for responding to intellectual
+              property rights complaints.
+      - id: th-cscs-5.1.3.3-csc
+        class: cscs-requirement
+        title: Protection of Records (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.3.3
+        - name: clause
+          value: 5.1.3.3
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.3-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.3-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall request information from the cloud service provider
+              about the protection of records gathered and stored by the cloud service provider that are
+              relevant to the use of cloud services by the cloud service customer.
+      - id: th-cscs-5.1.3.3-csp
+        class: cscs-requirement
+        title: Protection of Records (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.3.3
+        - name: clause
+          value: 5.1.3.3
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.3-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.3-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide information to the cloud service customer
+              about the protection of records that are gathered and stored by the cloud service provider
+              relating to the use of cloud services by the cloud service customer.
+      - id: th-cscs-5.1.3.4-csc
+        class: cscs-requirement
+        title: Regulation of Cryptographic Controls (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.3.4
+        - name: clause
+          value: 5.1.3.4
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.4-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.4-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall verify that the set of cryptographic controls that
+              apply to the use of a cloud service comply with relevant agreements, legislation and regulations.
+      - id: th-cscs-5.1.3.4-csp
+        class: cscs-requirement
+        title: Regulation of Cryptographic Controls (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.3.4
+        - name: clause
+          value: 5.1.3.4
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.4-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.4-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide descriptions of the cryptographic controls
+              implemented by the cloud service provider to the cloud service customer for reviewing compliance
+              with applicable agreements, legislation and regulations.
+      - id: th-cscs-5.1.3.5-csc
+        class: cscs-requirement
+        title: Independent Review of Information Security (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.1.3.5
+        - name: clause
+          value: 5.1.3.5
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.5-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.5-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall request documented evidence that the implementation
+              of information security controls and guidelines for the cloud service is in line with any
+              claims made by the cloud service provider. Such evidence could include certifications against
+              relevant standards.
+      - id: th-cscs-5.1.3.5-csp
+        class: cscs-requirement
+        title: Independent Review of Information Security (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.1.3.5
+        - name: clause
+          value: 5.1.3.5
+        - name: section
+          value: 5.1.3
+        - name: standard-part
+          value: one
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '11'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.1.3.5-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.1.3.5-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide documented evidence to the cloud service customer
+              to confirm the cloud service provider’s claims of implementing controls for information
+              security and personal data protection.
+          - id: th-cscs-5.1.3.5-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Where individual cloud service customer audits are impractical or can increase risks
+              to information security, the cloud service provider shall provide independent evidence that
+              information security and personal data protection are implemented and operated in accordance
+              with the cloud service provider's policies and procedures. This shall be made available
+              to prospective cloud service customers prior to entering a contract. A relevant independent
+              audit as selected by the cloud service provider should normally be an acceptable method
+              for fulfilling the cloud service customer's interest in reviewing the cloud service provider's
+              operations, provided sufficient transparency is provided. When the independent audit is
+              impractical, the cloud service provider should conduct a self-assessment, and disclose its
+              process and results to the cloud service customer.
+  - id: th-cscs-part-two
+    class: standard-part
+    title: 'Part Two: Cloud Infrastructure Security and Operation'
+    props:
+    - name: label
+      value: '5.2'
+    - name: standard-part
+      value: two
+    groups:
+    - id: th-cscs-5.2.1
+      class: section
+      title: Human Resource Security
+      props:
+      - name: label
+        value: 5.2.1
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.1.1-csc
+        class: cscs-requirement
+        title: Information Security Awareness, Education and Training (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.1.1
+        - name: clause
+          value: 5.2.1.1
+        - name: section
+          value: 5.2.1
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '12'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.1.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.1.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service customer shall add the following items to awareness, education and
+              training programmes for cloud service business managers, cloud service administrators, cloud
+              service integrators and cloud service users, including relevant employees and contractors:
+
+
+              - standards and procedures for the use of cloud services;
+
+
+              - information security risks relating to cloud services and how those risks are managed;
+
+
+              - system and network environment risks with the use of cloud services;
+
+
+              - personal data protection;
+
+
+              - applicable legal and regulatory considerations.'
+          - id: th-cscs-5.2.1.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Information security awareness, education and training programmes about cloud services
+              shall be provided to management and the supervising managers, including those of business
+              units.
+      - id: th-cscs-5.2.1.1-csp
+        class: cscs-requirement
+        title: Information Security Awareness, Education and Training (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.1.1
+        - name: clause
+          value: 5.2.1.1
+        - name: section
+          value: 5.2.1
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '12'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.1.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.1.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide awareness, education and training of information
+              security and personal data protection, and request contractors to do the same, concerning
+              the appropriate handling of cloud service customer data and cloud service derived data.
+              This data can contain information confidential to a cloud service customer or be subject
+              to specific limitations, including regulatory restrictions, on access and use by the cloud
+              service provider.
+    - id: th-cscs-5.2.2
+      class: section
+      title: Asset Management
+      props:
+      - name: label
+        value: 5.2.2
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.2.1-csc
+        class: cscs-requirement
+        title: Inventory of Assets (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.2.1
+        - name: clause
+          value: 5.2.2.1
+        - name: section
+          value: 5.2.2
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.2.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.2.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer's inventory of assets shall account for information and
+              associated assets stored in the cloud computing environment. The records of the inventory
+              should indicate where the assets are maintained, e.g., identification of the cloud service.
+      - id: th-cscs-5.2.2.1-csp
+        class: cscs-requirement
+        title: Inventory of Assets (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.2.1
+        - name: clause
+          value: 5.2.2.1
+        - name: section
+          value: 5.2.2
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.2.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.2.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The inventory of assets of the cloud service provider shall explicitly identify:
+
+
+              - cloud service customer data;
+
+
+              - cloud service derived data.'
+      - id: th-cscs-5.2.2.2-csc
+        class: cscs-requirement
+        title: Labelling of Information (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.2.2
+        - name: clause
+          value: 5.2.2.2
+        - name: section
+          value: 5.2.2
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.2.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.2.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall label information and associated assets maintained
+              in the cloud computing environment in accordance with the cloud service customer's adopted
+              procedures for labelling.
+      - id: th-cscs-5.2.2.2-csp
+        class: cscs-requirement
+        title: Labelling of Information (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.2.2
+        - name: clause
+          value: 5.2.2.2
+        - name: section
+          value: 5.2.2
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.2.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.2.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall document and disclose any service functionality it
+              provides allowing cloud service customers to classify and label their information and associated
+              assets.
+    - id: th-cscs-5.2.3
+      class: section
+      title: Access Control
+      props:
+      - name: label
+        value: 5.2.3
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.3.1-csc
+        class: cscs-requirement
+        title: Access to Networks and Network Services (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.1
+        - name: clause
+          value: 5.2.3.1
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer's access control policy for the use of network services
+              shall specify requirements for user access to each separate cloud service that is used.
+      - id: th-cscs-5.2.3.2-csc
+        class: cscs-requirement
+        title: User Registration and Deregistration (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.2
+        - name: clause
+          value: 5.2.3.2
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Procedures for user registration and de- registration shall address the situation where
+              user access control is compromised, such as the corruption or compromise of passwords or
+              other user registration data (e.g. as a result of inadvertent disclosure).
+      - id: th-cscs-5.2.3.2-csp
+        class: cscs-requirement
+        title: User Registration and Deregistration (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.2
+        - name: clause
+          value: 5.2.3.2
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '13'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: To manage access to cloud services by a cloud service customer's cloud service users,
+              the cloud service provider shall provide user registration and deregistration functions,
+              and specifications for the use of these functions to the cloud service customer.
+      - id: th-cscs-5.2.3.3-csp
+        class: cscs-requirement
+        title: User Access Provisioning (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.3
+        - name: clause
+          value: 5.2.3.3
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.3-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.3-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide functions for managing the access rights of
+              the cloud service customer's cloud service users, and specifications for the use of these
+              functions.
+      - id: th-cscs-5.2.3.4-csc
+        class: cscs-requirement
+        title: Management of Privileged Access Rights (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.4
+        - name: clause
+          value: 5.2.3.4
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.4-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.4-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall use sufficient authentication techniques (e.g., multi-factor
+              authentication) for authenticating the cloud service administrators of the cloud service
+              customer to the administrative capabilities of a cloud service according to the identified
+              risks.
+      - id: th-cscs-5.2.3.4-csp
+        class: cscs-requirement
+        title: Management of Privileged Access Rights (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.4
+        - name: clause
+          value: 5.2.3.4
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.4-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.4-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide sufficient authentication techniques (e.g.,
+              multi-factor authentication) for authenticating the cloud service administrators of the
+              cloud service customer to the administrative capabilities of a cloud service, according
+              to the identified risks.
+      - id: th-cscs-5.2.3.5-csc
+        class: cscs-requirement
+        title: Management of Secret Authentication Information of Users (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.5
+        - name: clause
+          value: 5.2.3.5
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.5-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.5-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall verify that the cloud service provider's management
+              procedure for allocating secret authentication information, such as passwords, meets the
+              cloud service customer's requirements.
+      - id: th-cscs-5.2.3.5-csp
+        class: cscs-requirement
+        title: Management of Secret Authentication Information of Users (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.5
+        - name: clause
+          value: 5.2.3.5
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.5-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.5-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide information on procedures for the management
+              of the secret authentication information of the cloud service customer, including the procedures
+              for allocating such information and for user authentication.
+      - id: th-cscs-5.2.3.6-csc
+        class: cscs-requirement
+        title: Information Access Restriction (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.6
+        - name: clause
+          value: 5.2.3.6
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.6-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.6-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall ensure that access to information in the cloud service
+              can be restricted in accordance with its access control policy and that such restrictions
+              are realized. This includes restricting access to cloud services, cloud service functions,
+              and cloud service customer data maintained in the service.
+      - id: th-cscs-5.2.3.6-csp
+        class: cscs-requirement
+        title: Information Access Restriction (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.6
+        - name: clause
+          value: 5.2.3.6
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '14'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.6-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.6-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide access controls that allow the cloud service
+              customer to restrict access to its cloud services and the cloud service customer data maintained
+              in the service.
+      - id: th-cscs-5.2.3.7-csc
+        class: cscs-requirement
+        title: Use of Privilege Utility Programs (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.7
+        - name: clause
+          value: 5.2.3.7
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.7-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.7-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Where the use of utility programs is permitted, the cloud service customer shall identify
+              the utility programs to be used in its cloud computing environment, and ensure that they
+              do not interfere with the controls of the cloud service.
+      - id: th-cscs-5.2.3.7-csp
+        class: cscs-requirement
+        title: Use of Privilege Utility Programs (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.7
+        - name: clause
+          value: 5.2.3.7
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.7-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.7-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall identify the requirements for any utility programs
+              used within the cloud service. The cloud service provider shall ensure that any use of utility
+              programs capable of bypassing normal operating or security procedures is strictly limited
+              to authorized personnel, and that the use of such programs is reviewed and audited regularly.
+      - id: th-cscs-5.2.3.8-csc
+        class: cscs-requirement
+        title: Secure Log-on Procedures (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.3.8
+        - name: clause
+          value: 5.2.3.8
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.8-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.8-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Cloud service customers shall require users under their control to follow secure log-on
+              procedures for any account.
+      - id: th-cscs-5.2.3.8-csp
+        class: cscs-requirement
+        title: Secure Log-on Procedures (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.3.8
+        - name: clause
+          value: 5.2.3.8
+        - name: section
+          value: 5.2.3
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.3.8-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.3.8-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Where required, the cloud service provider shall provide secure log-on procedures for
+              any account requested by the cloud service customer for cloud service users under the cloud
+              service customer's control.
+    - id: th-cscs-5.2.4
+      class: section
+      title: Cryptography
+      props:
+      - name: label
+        value: 5.2.4
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.4.1-csc
+        class: cscs-requirement
+        title: Policy on the Use of Cryptographic Controls (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.4.1
+        - name: clause
+          value: 5.2.4.1
+        - name: section
+          value: 5.2.4
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.4.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.4.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall implement cryptographic controls for its use whether
+              those controls are supplied by the cloud service customer or by the cloud service provider.
+          - id: th-cscs-5.2.4.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: 'When the cloud service provider offers cryptography, the cloud service customer shall
+              review any information supplied by the cloud service provider to confirm whether the cryptographic
+              capabilities:
+
+
+              - meet the cloud service customer''s policy requirements;
+
+
+              - are compatible with any other cryptographic protection used by the cloud service customer;
+
+
+              - apply to data at rest and in transit to, from and within the cloud service.'
+      - id: th-cscs-5.2.4.1-csp
+        class: cscs-requirement
+        title: Policy on the Use of Cryptographic Controls (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.4.1
+        - name: clause
+          value: 5.2.4.1
+        - name: section
+          value: 5.2.4
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '15'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.4.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.4.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide information to the cloud service customer
+              regarding the encryption used to protect the information and personal data its processes.
+              The cloud service provider shall also provide information to the cloud service customer
+              about any capabilities it provides that can assist the cloud service customer in applying
+              its own cryptographic protection.
+      - id: th-cscs-5.2.4.2-csc
+        class: cscs-requirement
+        title: Key Management (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.4.2
+        - name: clause
+          value: 5.2.4.2
+        - name: section
+          value: 5.2.4
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '16'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.4.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.4.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall identify the cryptographic keys for each cloud service,
+              and implement procedures for key management.
+          - id: th-cscs-5.2.4.2-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: 'Where the cloud service provides key management functionality for use by the cloud
+              service customer, the cloud service customer shall request the following information on
+              the procedures used to manage keys related to the cloud service:
+
+
+              - type of keys;
+
+
+              - specifications of the key management system, including procedures for each stage of the
+              key life-cycle, i.e., generating, changing or updating, storing, retiring, retrieving, retaining
+              and destroying;
+
+
+              - recommended key management procedures for use by the cloud service customer.'
+          - id: th-cscs-5.2.4.2-csc_smt.c
+            name: item
+            props:
+            - name: label
+              value: c)
+            prose: The cloud service customer shall not permit the cloud service provider to store and
+              manage the encryption keys for cryptographic operations when the cloud service customer
+              employs its own key management.
+    - id: th-cscs-5.2.5
+      class: section
+      title: Physical and Environment Security
+      props:
+      - name: label
+        value: 5.2.5
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: high
+      controls:
+      - id: th-cscs-5.2.5.1-csc
+        class: cscs-requirement
+        title: Data Center Location (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.5.1
+        - name: clause
+          value: 5.2.5.1
+        - name: section
+          value: 5.2.5
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '17'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.5.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.5.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Shall use primary data centers located in Thailand.
+      - id: th-cscs-5.2.5.1-csp
+        class: cscs-requirement
+        title: Data Center Location (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.5.1
+        - name: clause
+          value: 5.2.5.1
+        - name: section
+          value: 5.2.5
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '17'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.5.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.5.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The primary data centers shall be located in Thailand.
+          - id: th-cscs-5.2.5.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service provider shall establish a secondary (backup) data centers either
+              in Thailand or within the Southeast Asia region as geographically close as practicable to
+              the cloud service customer’s primary operations, including Singapore and the Hong Kong Special
+              Administrative Region of the People's Republic of China.
+      - id: th-cscs-5.2.5.2-csc
+        class: cscs-requirement
+        title: Secure Disposal of Reuse of Equipment (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.5.2
+        - name: clause
+          value: 5.2.5.2
+        - name: section
+          value: 5.2.5
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '17'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.5.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.5.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall request confirmation that the cloud service provider
+              has the policies and procedures for secure disposal or reuse of resources.
+      - id: th-cscs-5.2.5.2-csp
+        class: cscs-requirement
+        title: Secure Disposal of Reuse of Equipment (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.5.2
+        - name: clause
+          value: 5.2.5.2
+        - name: section
+          value: 5.2.5
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '17'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.5.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.5.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service shall ensure that arrangements are made for the secure disposal or
+              reuse of resources (e.g., equipment, data storage, files, memory) in a timely manner.
+          - id: th-cscs-5.2.5.2-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: For the purposes of secure disposal or re- use, equipment containing storage media
+              that can possibly contain personal data shall be treated as though it does, and shall be
+              securely disposed of or prepared for re- use in such a manner that the data cannot be recovered.
+    - id: th-cscs-5.2.6
+      class: section
+      title: Operations Security
+      props:
+      - name: label
+        value: 5.2.6
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: high
+      controls:
+      - id: th-cscs-5.2.6.1-csc
+        class: cscs-requirement
+        title: Change Management (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.1
+        - name: clause
+          value: 5.2.6.1
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '18'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer's change management process shall take into account the
+              impact of any changes made by the cloud service provider.
+      - id: th-cscs-5.2.6.1-csp
+        class: cscs-requirement
+        title: Change Management (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.1
+        - name: clause
+          value: 5.2.6.1
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '18'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall provide the cloud service customer with information
+              regarding changes to the cloud service that could adversely affect the cloud service. The
+              following will help the cloud service customer determine the effect the changes can have
+              on information security:
+
+
+              - categories of changes;
+
+
+              - planned date and time of the changes;
+
+
+              - technical description of the changes to the cloud service and underlying systems;
+
+
+              - notification of the start and the completion of the changes.'
+          - id: th-cscs-5.2.6.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: When a cloud service provider offers a cloud service that depends on a peer cloud service
+              provider, then the cloud service provider might need to inform the cloud service customer
+              of changes caused by the peer cloud service provider.
+      - id: th-cscs-5.2.6.2-csc
+        class: cscs-requirement
+        title: Capacity Management (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.2
+        - name: clause
+          value: 5.2.6.2
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '18'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall ensure that the agreed capacity provided by the cloud
+              service meets the cloud service customer's requirements.
+          - id: th-cscs-5.2.6.2-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service customer shall monitor the use of cloud services, and forecast resource
+              capacity needs, to ensure performance of the cloud services over time.
+      - id: th-cscs-5.2.6.2-csp
+        class: cscs-requirement
+        title: Capacity Management (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.2
+        - name: clause
+          value: 5.2.6.2
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '18'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall monitor the total resource capacity to prevent information
+              security incidents caused by resource shortages.
+      - id: th-cscs-5.2.6.3-csc
+        class: cscs-requirement
+        title: Information Backup (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.3
+        - name: clause
+          value: 5.2.6.3
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '19'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.3-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.3-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Where the cloud service provider provides backup capability as part of the cloud service,
+              the cloud service customer shall request the specifications of the backup capability from
+              the cloud service provider. The cloud service customer shall also verify that they meet
+              their backup requirements.
+          - id: th-cscs-5.2.6.3-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service customer is responsible for implementing backup capabilities when
+              the cloud service provider does not provide them.
+      - id: th-cscs-5.2.6.3-csp
+        class: cscs-requirement
+        title: Information Backup (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.3
+        - name: clause
+          value: 5.2.6.3
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '19'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.3-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.3-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall provide the specifications of its backup capabilities
+              to the cloud service customer. The specifications should include the following information,
+              as appropriate:
+
+
+              - scope and schedule of backups;
+
+
+              - backup methods and data formats, including encryption, if relevant;
+
+
+              - retention periods for backup data;
+
+
+              - procedures for verifying integrity of backup data;
+
+
+              - procedures and timescales involved in restoring data from backup;
+
+
+              - procedures to test the backup capabilities;
+
+
+              - storage location of backups.'
+          - id: th-cscs-5.2.6.3-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The cloud service provider shall provide secure and segregated access to backups, if
+              such service is offered to cloud service customers.
+      - id: th-cscs-5.2.6.4-csc
+        class: cscs-requirement
+        title: Event Logging (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.4
+        - name: clause
+          value: 5.2.6.4
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '19'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.4-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.4-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall define its requirements for event logging and verify
+              that the cloud service meets those requirements.
+      - id: th-cscs-5.2.6.4-csp
+        class: cscs-requirement
+        title: Event Logging (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.4
+        - name: clause
+          value: 5.2.6.4
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '19'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.4-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.4-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide logging capabilities to the cloud service
+              customer.
+          - id: th-cscs-5.2.6.4-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Where applicable, event logs should record whether personal data has been altered (i.e.
+              added, modified or deleted) as a result of the event, and identify the individual responsible
+              (audit log). Where multiple cloud service providers are involved in delivering services
+              within the reference cloud architecture, roles and responsibilities for meeting this requirement
+              should be defined and may be shared.
+      - id: th-cscs-5.2.6.5-csc
+        class: cscs-requirement
+        title: Protection of Log Information (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.5
+        - name: clause
+          value: 5.2.6.5
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '20'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.5-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.5-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Log information recorded for purposes such as security monitoring and operational diagnostics
+              can contain personal data. Measures, such as controlling access, shall be put in place to
+              ensure that logged information is only used for its intended purposes.
+          - id: th-cscs-5.2.6.5-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: A procedure, preferably automatic, shall be put in place to ensure that logged information
+              is deleted within a specified retention and documented period.
+      - id: th-cscs-5.2.6.5-csp
+        class: cscs-requirement
+        title: Protection of Log Information (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.5
+        - name: clause
+          value: 5.2.6.5
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '20'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.5-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.5-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Log information recorded for purposes such as security monitoring and operational diagnostics
+              can contain personal data. Measures, such as controlling access, shall be put in place to
+              ensure that logged information is only used for its intended purposes.
+          - id: th-cscs-5.2.6.5-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: A procedure, preferably automatic, shall be put in place to ensure that logged information
+              is deleted within a specified retention and documented period.
+      - id: th-cscs-5.2.6.6-csc
+        class: cscs-requirement
+        title: Administrator and Operator Logs (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.6
+        - name: clause
+          value: 5.2.6.6
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '20'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.6-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.6-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: If a privileged operation is delegated to the cloud service customer, the operation
+              and performance of those operations shall be logged. The cloud service customer shall determine
+              whether logging capabilities provided by the cloud service provider are appropriate or whether
+              the cloud service customer shall implement additional logging capabilities.
+      - id: th-cscs-5.2.6.7-csc
+        class: cscs-requirement
+        title: Clock Synchronization (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.7
+        - name: clause
+          value: 5.2.6.7
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '20'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.7-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.7-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall request information about the clock synchronization
+              used for the cloud service provider's systems.
+      - id: th-cscs-5.2.6.7-csp
+        class: cscs-requirement
+        title: Clock Synchronization (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.7
+        - name: clause
+          value: 5.2.6.7
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '20'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.7-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.7-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide information to the cloud service customer
+              regarding the clock used by the cloud service provider's systems, and information about
+              how the cloud service customer can synchronize local clocks with the cloud service clock.
+      - id: th-cscs-5.2.6.8-csc
+        class: cscs-requirement
+        title: Management of Technical Vulnerabilities (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.8
+        - name: clause
+          value: 5.2.6.8
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.8-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.8-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall request information from the cloud service provider
+              about the management of technical vulnerabilities that can affect the cloud services provided.
+              The cloud service customer shall identify the technical vulnerabilities it will be responsible
+              to manage, and clearly define a process for managing them.
+      - id: th-cscs-5.2.6.8-csp
+        class: cscs-requirement
+        title: Management of Technical Vulnerabilities (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.8
+        - name: clause
+          value: 5.2.6.8
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.8-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.8-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider should make available to the cloud service customer information
+              about the management of technical vulnerabilities that can affect the cloud services provided.
+      - id: th-cscs-5.2.6.9-csc
+        class: cscs-requirement
+        title: Separation of Development, Testing and Operational Environments (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.6.9
+        - name: clause
+          value: 5.2.6.9
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.9-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.9-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Where the use of personal data for testing purposes cannot be avoided, a risk assessment
+              shall be undertaken. Technical and organizational measures shall be implemented to minimize
+              the risk identified.
+      - id: th-cscs-5.2.6.9-csp
+        class: cscs-requirement
+        title: Separation of Development, Testing and Operational Environments (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.6.9
+        - name: clause
+          value: 5.2.6.9
+        - name: section
+          value: 5.2.6
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: high
+        parts:
+        - id: th-cscs-5.2.6.9-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.6.9-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Where the use of personal data for testing purposes cannot be avoided, a risk assessment
+              shall be undertaken. Technical and organizational measures shall be implemented to minimize
+              the identified risks.
+    - id: th-cscs-5.2.7
+      class: section
+      title: Communication Security
+      props:
+      - name: label
+        value: 5.2.7
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: moderate
+      controls:
+      - id: th-cscs-5.2.7.1-csc
+        class: cscs-requirement
+        title: Information Transfer Policies and Procedures (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.7.1
+        - name: clause
+          value: 5.2.7.1
+        - name: section
+          value: 5.2.7
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.7.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.7.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Whenever physical media are used for information transfer, a system shall be put in
+              place to record incoming and outgoing physical media containing personal data, including
+              the type of physical media, the authorized sender/recipients, the date and time, and the
+              number of physical media
+          - id: th-cscs-5.2.7.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Cloud service customer shall request cloud service providers to put additional measures
+              in place (such as encryption) to ensure that data can only be accessed at the point of destination
+              and not in transit.
+      - id: th-cscs-5.2.7.1-csp
+        class: cscs-requirement
+        title: Information Transfer Policies and Procedures (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.7.1
+        - name: clause
+          value: 5.2.7.1
+        - name: section
+          value: 5.2.7
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '21'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.7.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.7.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: Whenever physical media are used for information transfer, a system shall be put in
+              place to record incoming and outgoing physical media containing personal data, including
+              the type of physical media, the authorized sender/recipients, the date and time, and the
+              number of physical media.
+          - id: th-cscs-5.2.7.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Where possible, cloud service customers shall be requested to put additional measures
+              in place (such as encryption) to ensure that the data can only be accessed at the point
+              of destination and not in transit.
+      - id: th-cscs-5.2.7.2-csc
+        class: cscs-requirement
+        title: Segregation of Networks (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.7.2
+        - name: clause
+          value: 5.2.7.2
+        - name: section
+          value: 5.2.7
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.7.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.7.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall defines its requirements for segregating networks
+              to achieve tenant isolation in the shared environment of a cloud service and verify that
+              the cloud service provider meets those requirements.
+      - id: th-cscs-5.2.7.2-csp
+        class: cscs-requirement
+        title: Segregation of Networks (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.7.2
+        - name: clause
+          value: 5.2.7.2
+        - name: section
+          value: 5.2.7
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.7.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.7.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall enforce segregation of network access for the following
+              cases:
+
+
+              - segregation between tenants in a multi- tenant environment;
+
+
+              - segregation between the cloud service provider''s internal administration environment
+              and the cloud service customer''s cloud computing environment.'
+          - id: th-cscs-5.2.7.2-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: Where appropriate, the cloud service provider shall help the cloud service customer
+              verify the segregation implemented by the cloud service provider.
+    - id: th-cscs-5.2.8
+      class: section
+      title: System Acquisition, Development, and Maintenance
+      props:
+      - name: label
+        value: 5.2.8
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.8.1-csc
+        class: cscs-requirement
+        title: Information Security Requirements Analysis and Specification (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.8.1
+        - name: clause
+          value: 5.2.8.1
+        - name: section
+          value: 5.2.8
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.8.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.8.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall determine its information security requirements for
+              the cloud service and then evaluate whether services offered by a cloud service provider
+              can meet these requirements.
+          - id: th-cscs-5.2.8.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: For this evaluation, the cloud service customer must request information on the information
+              security capabilities from the cloud service provider.
+      - id: th-cscs-5.2.8.1-csp
+        class: cscs-requirement
+        title: Information Security Requirements Analysis and Specification (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.8.1
+        - name: clause
+          value: 5.2.8.1
+        - name: section
+          value: 5.2.8
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.8.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.8.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider shall provide information to the cloud service customers
+              about the information security capabilities they use. This information shall be informative
+              without disclosing information that could be useful to someone with malicious intent.
+      - id: th-cscs-5.2.8.2-csc
+        class: cscs-requirement
+        title: Secure Development Policy (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.8.2
+        - name: clause
+          value: 5.2.8.2
+        - name: section
+          value: 5.2.8
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.8.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.8.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer must request information from the cloud service provider
+              about the cloud service provider's use of secure development procedures and practices.
+      - id: th-cscs-5.2.8.2-csp
+        class: cscs-requirement
+        title: Secure Development Policy (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.8.2
+        - name: clause
+          value: 5.2.8.2
+        - name: section
+          value: 5.2.8
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '22'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.8.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.8.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service provider must provide information about its use of secure development
+              procedures and practices to the extent compatible with its policy for disclosure.
+    - id: th-cscs-5.2.9
+      class: section
+      title: Supplier Relationships
+      props:
+      - name: label
+        value: 5.2.9
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: low
+      controls:
+      - id: th-cscs-5.2.9.1-csc
+        class: cscs-requirement
+        title: Information Security Policy for Supplier Relationships (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.9.1
+        - name: clause
+          value: 5.2.9.1
+        - name: section
+          value: 5.2.9
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '23'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.9.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.9.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall include the cloud service provider as a type of supplier
+              in its information security policy for supplier relationships. This will help to mitigate
+              risks associated with the cloud service provider's access to and management of the cloud
+              service customer data.
+      - id: th-cscs-5.2.9.2-csc
+        class: cscs-requirement
+        title: Addressing Security within Supplier Agreements (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.9.2
+        - name: clause
+          value: 5.2.9.2
+        - name: section
+          value: 5.2.9
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '23'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.9.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.9.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service customer shall confirm the information security roles and responsibilities
+              relating to the cloud service, as described in the service agreement. These can include
+              the following processes:
+
+
+              - malware protection;
+
+
+              - backup;
+
+
+              - cryptographic controls;
+
+
+              - vulnerability management;
+
+
+              - incident management;
+
+
+              - technical compliance checking;
+
+
+              - security testing;
+
+
+              - auditing;
+
+
+              - collection, maintenance and protection of evidence, including logs and audit trails;
+
+
+              - protection of information upon termination of the service agreement;
+
+
+              - authentication and access control;
+
+
+              - identity and access management.'
+      - id: th-cscs-5.2.9.2-csp
+        class: cscs-requirement
+        title: Addressing Security within Supplier Agreements (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.9.2
+        - name: clause
+          value: 5.2.9.2
+        - name: section
+          value: 5.2.9
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '23'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.9.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.9.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall specify as part of an agreement the relevant information
+              security measures that the cloud service provider will implement to ensure no misunderstanding
+              between the cloud service provider and cloud service customer. These may include the following
+              processes:
+
+
+              - malware protection;
+
+
+              - backup;
+
+
+              - cryptographic controls;
+
+
+              - vulnerability management;
+
+
+              - incident management;
+
+
+              - technical compliance checking;
+
+
+              - security testing;
+
+
+              - auditing;
+
+
+              - collection, maintenance and protection of evidence, including logs and audit trails;
+
+
+              - protection of information upon termination of the service agreement;
+
+
+              - authentication and access control;
+
+
+              - identity and access management.'
+          - id: th-cscs-5.2.9.2-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: The relevant information security measures that the cloud service provider will implement
+              can vary based on the type of cloud service the cloud service customer is using.
+      - id: th-cscs-5.2.9.3-csp
+        class: cscs-requirement
+        title: Information and Communication Technology Supply Chain (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.9.3
+        - name: clause
+          value: 5.2.9.3
+        - name: section
+          value: 5.2.9
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '24'
+        - name: minimum-impact-level
+          value: low
+        parts:
+        - id: th-cscs-5.2.9.3-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.9.3-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: If a cloud service provider uses cloud services of peer cloud service providers, the
+              cloud service provider shall ensure information security levels to its own cloud service
+              customers are maintained or exceeded.
+          - id: th-cscs-5.2.9.3-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: When the cloud service provider provides cloud services based on a supply chain, the
+              cloud service provider shall provide information security objectives to suppliers, and request
+              each of the suppliers to perform risk management activities to achieve the objectives.
+    - id: th-cscs-5.2.10
+      class: section
+      title: Information Security Incident Management
+      props:
+      - name: label
+        value: 5.2.10
+      - name: standard-part
+        value: two
+      - name: minimum-impact-level
+        value: moderate
+      controls:
+      - id: th-cscs-5.2.10.1-csc
+        class: cscs-requirement
+        title: Responsibilities and Procedures (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.10.1
+        - name: clause
+          value: 5.2.10.1
+        - name: section
+          value: 5.2.10
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '24'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.10.1-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.10.1-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: The cloud service customer shall verify the allocation of responsibilities for information
+              security incident management and shall ensure that it meets the requirements of the cloud
+              service customer.
+          - id: th-cscs-5.2.10.1-csc_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: An information security incident shall trigger a review by the cloud service customer,
+              or jointly between the cloud service customer and the cloud service provider, as part of
+              their information security incident management process, to determine whether a personal
+              data breach has occurred.
+      - id: th-cscs-5.2.10.1-csp
+        class: cscs-requirement
+        title: Responsibilities and Procedures (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.10.1
+        - name: clause
+          value: 5.2.10.1
+        - name: section
+          value: 5.2.10
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '24'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.10.1-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.10.1-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: As a part of the service specifications, the cloud service provider shall define the
+              allocation of information security incident management responsibilities and procedures between
+              the cloud service customer and the cloud service provider.
+          - id: th-cscs-5.2.10.1-csp_smt.b
+            name: item
+            props:
+            - name: label
+              value: b)
+            prose: 'The cloud service provider shall provide the cloud service customer with documentation
+              covering:
+
+
+              - the scope of information security incidents that the cloud service provider will report
+              to the cloud service customer;
+
+
+              - the level of disclosure of the detection of information security incidents and the associated
+              responses;
+
+
+              - the target timeframe in which notifications of information security incidents will occur;
+
+
+              - the procedure for the notification of information security incidents;
+
+
+              - contact information for the handling of issues relating to information security incidents;
+
+
+              - any remedies that can apply if certain information security incidents occur.'
+          - id: th-cscs-5.2.10.1-csp_smt.c
+            name: item
+            props:
+            - name: label
+              value: c)
+            prose: An information security incident shall trigger a review by the cloud service customer,
+              or jointly between the cloud service customer and the cloud service provider, as part of
+              their information security incident management process, to determine whether a personal
+              data breach has occurred.
+      - id: th-cscs-5.2.10.2-csc
+        class: cscs-requirement
+        title: Reporting Information Security Events (Cloud Service Customer)
+        props:
+        - name: label
+          value: 5.2.10.2
+        - name: clause
+          value: 5.2.10.2
+        - name: section
+          value: 5.2.10
+        - name: standard-part
+          value: two
+        - name: party
+          value: csc
+        - name: party-title
+          value: Cloud Service Customer
+        - name: source-page
+          value: '25'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.10.2-csc_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.10.2-csc_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service customer shall request information from the cloud service provider
+              about the mechanisms for:
+
+
+              - the cloud service customer to report an information security event it has detected to
+              the cloud service provider;
+
+
+              - the cloud service provider to receive reports regarding an information security event
+              detected by the cloud service provider;
+
+
+              - the cloud service customer to track the status of a reported information security event.'
+      - id: th-cscs-5.2.10.2-csp
+        class: cscs-requirement
+        title: Reporting Information Security Events (Cloud Service Provider)
+        props:
+        - name: label
+          value: 5.2.10.2
+        - name: clause
+          value: 5.2.10.2
+        - name: section
+          value: 5.2.10
+        - name: standard-part
+          value: two
+        - name: party
+          value: csp
+        - name: party-title
+          value: Cloud Service Provider
+        - name: source-page
+          value: '25'
+        - name: minimum-impact-level
+          value: moderate
+        parts:
+        - id: th-cscs-5.2.10.2-csp_smt
+          name: statement
+          parts:
+          - id: th-cscs-5.2.10.2-csp_smt.a
+            name: item
+            props:
+            - name: label
+              value: a)
+            prose: 'The cloud service provider shall provide mechanisms for:
+
+
+              - the cloud service customer to report an information security event to the cloud service
+              provider;
+
+
+              - the cloud service provider to report an information security event to a cloud service
+              customer;
+
+
+              - the cloud service customer to track the status of a reported information security event.'
+  back-matter:
+    resources:
+    - uuid: f7068d06-08a5-52e6-8332-8994843ebf2d
+      title: 'Notification of the National Cyber Security Committee Re: Cybersecurity Standards for Cloud
+        Systems, B.E. 2567 (2024) - unofficial English translation, version 1.1'
+      description: The document this catalog was generated from. Marked "Unofficial Translation" on every
+        page; the Thai text in the Royal Thai Government Gazette is the only version with legal force.
+      props:
+      - name: sha256
+        value: ee55bc0b5d371e66d4f3ee9f3312712326c1f443dfab8e614fee1e885fe6a679
+      - name: edition
+        value: cscs-v1.1
+      rlinks:
+      - href: https://drive.ncsa.or.th/s/qPRnkzBiB3iyNXJ/download
+        media-type: application/pdf
+    - uuid: 3e449401-92ca-5b9d-8217-7bbfef0d8289
+      title: Royal Thai Government Gazette publication of the Notification (official Thai text)
+      description: The official Thai text. Not parsed by this pipeline.
+      rlinks:
+      - href: https://ratchakitcha.soc.go.th/documents/43184.pdf
+        media-type: application/pdf
+    - uuid: c84d0e16-4b7a-51af-a8dc-2a0cbd10122e
+      title: Cybersecurity Act, B.E. 2562 (2019)
+      description: The enabling instrument. Section 9(4) empowers the National Cyber Security Committee
+        to issue cybersecurity standards, and this notification is issued under it.
+      rlinks:
+      - href: https://ratchakitcha.soc.go.th/documents/17ก/69/1.pdf
+        media-type: application/pdf
+    - uuid: 566558a2-7d93-5a9f-9a53-53f2b059e61d
+      title: 'Notification of the National Cyber Security Committee Re: Standards for Cybersecurity Categorization
+        of Data or Information Systems, B.E. 2566 (2023)'
+      description: The instrument that defines the low, moderate and high impact levels this standard's
+        minimum requirements are graded against. Clauses 4 and 5 and the clause 4 matrix all refer to
+        it; it is not converted here.
+    - uuid: d02bb643-223d-553b-b1f8-5e169a2b6816
+      title: 'Notification of the National Cyber Security Committee Re: Standards and Guidelines for the
+        Development of Cybersecurity Services, B.E. 2566 (2023)'
+      description: Governs accreditation of the certifying bodies named in the certification regime.
+    - uuid: dfe3edd6-9eb5-5056-9c29-2defdf3c87af
+      title: 'Notification of the Cybersecurity Regulating Committee Re: Codes of Practice and Standards
+        Framework for Government Agencies and Organization of Critical Information Infrastructure Agencies,
+        B.E. 2564 (2021)'
+    - uuid: 84c59201-d176-58cd-a50b-a6b4ca0199c2
+      title: ISO/IEC 27017:2015 Information technology — Security techniques — Code of practice for information
+        security controls based on ISO/IEC 27002 for cloud services
+      description: Normative reference. The clause structure and much of the wording of clause 5 follow
+        it, and the v1.1 translation moved further toward its vocabulary.
+    - uuid: e686b9fd-bfed-5f03-95fa-4f55972249b0
+      title: ISO/IEC 27018:2019 Information technology — Security techniques — Code of practice for protection
+        of personally identifiable information (PII) in public clouds acting as PII processors
+    - uuid: f4d7ab16-a48c-5c07-882d-060473e4df97
+      title: 'ISO/IEC 22123-1:2023 Information technology — Cloud computing — Part 1: Vocabulary'

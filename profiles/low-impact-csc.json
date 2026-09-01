@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "uuid": "f3b3b454-b326-51fe-ab81-5a3ae98fe523",
+    "metadata": {
+      "title": "Cybersecurity Standards for Cloud Systems — Low Impact, Cloud Service Customer",
+      "published": "2024-09-10T00:00:00+07:00",
+      "last-modified": "2025-09-01T00:00:00+07:00",
+      "version": "1.1",
+      "oscal-version": "1.2.3",
+      "props": [
+        {
+          "name": "profile-axis",
+          "value": "impact-level x party"
+        },
+        {
+          "name": "impact-level",
+          "value": "low"
+        },
+        {
+          "name": "party",
+          "value": "csc"
+        },
+        {
+          "name": "party-title",
+          "value": "Cloud Service Customer"
+        },
+        {
+          "name": "source-clause",
+          "value": "4"
+        },
+        {
+          "name": "certification",
+          "value": "Self-assessment along with supporting documentation and approval from the highest executive of the organization, the assessment must be retained by the organization and submitted to the office"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://cloudsecurity.ncsa.or.th/publicationdocuments.html",
+          "rel": "canonical"
+        }
+      ],
+      "remarks": "Low Impact baseline for a Cloud Service Customer (CSC), from the minimum-requirements matrix in clause 4 of the annex.\n\nSelects 19 of the catalog's 39 cloud service customer controls.\n\nMinimum requirements as the matrix states them: Part One: - 5.1.1 and 5.1.2 Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.8, and 5.2.9 *Without 5.2.5\n\nCertification required of the cloud service customer at this level: Self-assessment along with supporting documentation and approval from the highest executive of the organization, the assessment must be retained by the organization and submitted to the office\n\nThis profile is a rendering of a published standard and carries no roles or parties: the National Cyber Security Committee issued the standard, not this file."
+    },
+    "imports": [
+      {
+        "href": "../catalogs/th-cscs.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "th-cscs-5.1.1-csc",
+              "th-cscs-5.1.2.1-csc",
+              "th-cscs-5.1.2.2-csc",
+              "th-cscs-5.2.1.1-csc",
+              "th-cscs-5.2.2.1-csc",
+              "th-cscs-5.2.2.2-csc",
+              "th-cscs-5.2.3.1-csc",
+              "th-cscs-5.2.3.2-csc",
+              "th-cscs-5.2.3.4-csc",
+              "th-cscs-5.2.3.5-csc",
+              "th-cscs-5.2.3.6-csc",
+              "th-cscs-5.2.3.7-csc",
+              "th-cscs-5.2.3.8-csc",
+              "th-cscs-5.2.4.1-csc",
+              "th-cscs-5.2.4.2-csc",
+              "th-cscs-5.2.8.1-csc",
+              "th-cscs-5.2.8.2-csc",
+              "th-cscs-5.2.9.1-csc",
+              "th-cscs-5.2.9.2-csc"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

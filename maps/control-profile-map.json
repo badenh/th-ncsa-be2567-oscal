@@ -1,0 +1,376 @@
+{
+  "generated_by": "generate_profiles.py",
+  "catalog": "th-cscs.json",
+  "catalog_version": "1.1",
+  "chain": "cumulative",
+  "profiles": {
+    "low-impact-csc": {
+      "controls": 19,
+      "added_here": 19,
+      "imports": "catalog"
+    },
+    "moderate-impact-csc": {
+      "controls": 28,
+      "added_here": 9,
+      "imports": "low-impact-csc"
+    },
+    "high-impact-csc": {
+      "controls": 39,
+      "added_here": 11,
+      "imports": "moderate-impact-csc"
+    },
+    "low-impact-csp": {
+      "controls": 18,
+      "added_here": 18,
+      "imports": "catalog"
+    },
+    "moderate-impact-csp": {
+      "controls": 27,
+      "added_here": 9,
+      "imports": "low-impact-csp"
+    },
+    "high-impact-csp": {
+      "controls": 37,
+      "added_here": 10,
+      "imports": "moderate-impact-csp"
+    }
+  },
+  "sections": {
+    "5.1.1": "low",
+    "5.1.2": "low",
+    "5.1.3": "moderate",
+    "5.2.1": "low",
+    "5.2.2": "low",
+    "5.2.3": "low",
+    "5.2.4": "low",
+    "5.2.5": "high",
+    "5.2.6": "high",
+    "5.2.7": "moderate",
+    "5.2.8": "low",
+    "5.2.9": "low",
+    "5.2.10": "moderate"
+  },
+  "controls": 76,
+  "membership": {
+    "th-cscs-5.1.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.2.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.2.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.1.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.2.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.2.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.4-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.5-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.6-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.7-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.3.8-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.4.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.4.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.8.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.8.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.9.1-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.9.2-csc": [
+      "low-impact-csc",
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.3.1-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.3.2-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.3.3-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.3.4-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.3.5-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.7.1-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.7.2-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.10.1-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.10.2-csc": [
+      "moderate-impact-csc",
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.5.1-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.5.2-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.1-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.2-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.3-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.4-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.5-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.6-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.7-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.8-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.2.6.9-csc": [
+      "high-impact-csc"
+    ],
+    "th-cscs-5.1.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.2.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.2.2-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.1.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.2.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.2.2-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.2-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.3-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.4-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.5-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.6-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.7-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.3.8-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.4.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.8.1-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.8.2-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.9.2-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.9.3-csp": [
+      "low-impact-csp",
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.3.1-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.3.2-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.3.3-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.3.4-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.1.3.5-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.7.1-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.7.2-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.10.1-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.10.2-csp": [
+      "moderate-impact-csp",
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.5.1-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.5.2-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.1-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.2-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.3-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.4-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.5-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.7-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.8-csp": [
+      "high-impact-csp"
+    ],
+    "th-cscs-5.2.6.9-csp": [
+      "high-impact-csp"
+    ]
+  }
+}

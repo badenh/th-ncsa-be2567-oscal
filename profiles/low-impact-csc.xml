@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="f3b3b454-b326-51fe-ab81-5a3ae98fe523">
+   <metadata>
+      <title>Cybersecurity Standards for Cloud Systems — Low Impact, Cloud Service Customer</title>
+      <published>2024-09-10T00:00:00+07:00</published>
+      <last-modified>2025-09-01T00:00:00+07:00</last-modified>
+      <version>1.1</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="impact-level x party" />
+      <prop name="impact-level" value="low" />
+      <prop name="party" value="csc" />
+      <prop name="party-title" value="Cloud Service Customer" />
+      <prop name="source-clause" value="4" />
+      <prop name="certification" value="Self-assessment along with supporting documentation and approval from the highest executive of the organization, the assessment must be retained by the organization and submitted to the office" />
+      <link href="https://cloudsecurity.ncsa.or.th/publicationdocuments.html" rel="canonical" />
+      <remarks>
+         <p>Low Impact baseline for a Cloud Service Customer (CSC), from the minimum-requirements matrix in clause 4 of the annex.</p>
+         <p>Selects 19 of the catalog's 39 cloud service customer controls.</p>
+         <p>Minimum requirements as the matrix states them: Part One: - 5.1.1 and 5.1.2 Part Two: - 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.8, and 5.2.9 *Without 5.2.5</p>
+         <p>Certification required of the cloud service customer at this level: Self-assessment along with supporting documentation and approval from the highest executive of the organization, the assessment must be retained by the organization and submitted to the office</p>
+         <p>This profile is a rendering of a published standard and carries no roles or parties: the National Cyber Security Committee issued the standard, not this file.</p>
+      </remarks>
+   </metadata>
+   <import href="../catalogs/th-cscs.xml">
+      <include-controls>
+         <with-id>th-cscs-5.1.1-csc</with-id>
+         <with-id>th-cscs-5.1.2.1-csc</with-id>
+         <with-id>th-cscs-5.1.2.2-csc</with-id>
+         <with-id>th-cscs-5.2.1.1-csc</with-id>
+         <with-id>th-cscs-5.2.2.1-csc</with-id>
+         <with-id>th-cscs-5.2.2.2-csc</with-id>
+         <with-id>th-cscs-5.2.3.1-csc</with-id>
+         <with-id>th-cscs-5.2.3.2-csc</with-id>
+         <with-id>th-cscs-5.2.3.4-csc</with-id>
+         <with-id>th-cscs-5.2.3.5-csc</with-id>
+         <with-id>th-cscs-5.2.3.6-csc</with-id>
+         <with-id>th-cscs-5.2.3.7-csc</with-id>
+         <with-id>th-cscs-5.2.3.8-csc</with-id>
+         <with-id>th-cscs-5.2.4.1-csc</with-id>
+         <with-id>th-cscs-5.2.4.2-csc</with-id>
+         <with-id>th-cscs-5.2.8.1-csc</with-id>
+         <with-id>th-cscs-5.2.8.2-csc</with-id>
+         <with-id>th-cscs-5.2.9.1-csc</with-id>
+         <with-id>th-cscs-5.2.9.2-csc</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

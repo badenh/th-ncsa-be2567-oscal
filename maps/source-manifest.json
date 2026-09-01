@@ -1,0 +1,46 @@
+{
+  "generated_by": "fetch_source.py",
+  "retrieved": "2026-09-02T05:05:39+07:00",
+  "portal": "https://cloudsecurity.ncsa.or.th/publicationdocuments.html",
+  "default_edition": "cscs-v1.1",
+  "pdfplumber": "0.11.10",
+  "python": "3.10.12",
+  "documents": [
+    {
+      "key": "act-2019",
+      "filename": "cybersecurity-act-2019.pdf",
+      "title": "Cybersecurity Act, B.E. 2562 (2019) - unofficial English translation",
+      "role": "enabling-act",
+      "origin": "file:///sessions/rcw-01f856b4k46xrj45ipam5a3a/mnt/th-ncsa-be2567-builder/1. CybersecurityAct-2019-EN (ฉบับเดิม).pdf",
+      "bytes": 310171,
+      "sha256": "2803019c0b4669b22fa8d98bce1e5be4003c1e2b69428881ffc2b35bfb8fe814"
+    },
+    {
+      "key": "cscs-v1.0",
+      "filename": "cscs-v1.0.pdf",
+      "title": "Notification of the National Cyber Security Committee Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024) - unofficial English translation, version 1.0",
+      "role": "control-source",
+      "origin": "file:///sessions/rcw-01f856b4k46xrj45ipam5a3a/mnt/th-ncsa-be2567-builder/16. Notification of NCSC Re Cybersecurity Standards for Cloud Systems.pdf",
+      "bytes": 361144,
+      "sha256": "f21ab76ebe1281e6d6763030b408df08c1c65f6d01498ff9d9ed25a40e3e20ef"
+    },
+    {
+      "key": "cscs-v1.1",
+      "filename": "cscs-v1.1.pdf",
+      "title": "Notification of the National Cyber Security Committee Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024) - unofficial English translation, version 1.1",
+      "role": "control-source",
+      "origin": "https://drive.ncsa.or.th/s/qPRnkzBiB3iyNXJ/download",
+      "bytes": 193293,
+      "sha256": "ee55bc0b5d371e66d4f3ee9f3312712326c1f443dfab8e614fee1e885fe6a679"
+    },
+    {
+      "key": "gazette-th",
+      "filename": "cscs-gazette-th.pdf",
+      "title": "Royal Thai Government Gazette publication of the Notification (official Thai text)",
+      "role": "official-text",
+      "origin": "https://ratchakitcha.soc.go.th/documents/43184.pdf",
+      "bytes": 291210,
+      "sha256": "7e93fca5e7a906e72cf1b5eb53e94ac74137e511e57e399235f412ca2c8a7bc3"
+    }
+  ]
+}
