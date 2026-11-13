@@ -1,7 +1,7 @@
 # th-ncsa-be2567
 
 OSCAL for Thailand's **Notification of the National Cyber Security Committee
-Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024)** — the standard
+Re: Cybersecurity Standards for Cloud Systems, B.E. 2567 (2024) (มาตรฐานความมั่นคงปลอดภัยไซเบอร์ระบบคลาวด์ของ สกมช. พ.ศ. 2567)** — the standard
 governing government agencies, regulators and Organisations of Critical
 Information Infrastructure that use public cloud services, and the providers who
 serve them.
